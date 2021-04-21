@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     //MARK:- Functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //MARK:- Facebook Event
         /*SizeitUtils().initUsers(userID: "1234", hashSize: obj.hasSizes(), data: "test")
         SizeitUtils().visitProduct(userID: "1234", product_sku: "Skirts-S,M,L,XL,XXL", hashSize: obj.hasSizes(), data: "")
         SizeitUtils().addProductToCart(userID: "1234", product_sku: "Skirts-S,M,L,XL,XXL", hashSize: obj.hasSizes(), data: "")
@@ -40,7 +42,7 @@ class ViewController: UIViewController {
     
     //MARK:- @IBAction
     @IBAction func btnFindMyFitAction(_ sender: UIButton) {
-        //
+        // MARK:- Pass attribute name and userID
         let strCurrentSize = obj.getSizeByAttribute(attributeName: "Outer Wear-FREE")
         if strCurrentSize.isEmpty {
             obj.openSizePopup(userId: "1", attributeName: "Outer Wear-FREE",controller: self)

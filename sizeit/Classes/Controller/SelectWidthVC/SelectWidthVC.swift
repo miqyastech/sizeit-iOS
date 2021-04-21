@@ -63,7 +63,7 @@ class SelectWidthVC: UIViewController {
         self.lblTitle.text = "FIND MY SIZE".localize()
         self.lblSelectWeightTitle.attributedText = "Select your weight".localize().withBoldText(text: "weight".localize())
         self.lblSelectWeightSubTitle.text = "by dragging the ruler horizontally".localize()
-        self.btnPrivacy.setTitle("Privacy Policy".localize(), for: .normal)
+        self.btnPrivacy.setAttributedTitle("Privacy Policy".localize().withBoldText(text: "Privacy Policy".localize()), for: .normal)
         self.btnContinue.setTitle("Continue".localize(), for: .normal)
         self.btnLBS.setTitle("LBS".localize(), for: .normal)
         self.btnKG.setTitle("KG".localize(), for: .normal)

@@ -11,8 +11,9 @@ import UIKit
 import SwiftyJSON
 
 //MARK: - Variables
+let bundleName = Bundle(identifier: "org.cocoapods.sizeit")
 let userDefault = UserDefaults.standard
-let mainStoryboard = UIStoryboard(name: "Sizeit", bundle: Bundle(identifier: "org.cocoapods.findmysize"))
+let mainStoryboard = UIStoryboard(name: "Sizeit", bundle: bundleName)
 var Measurement_key = "Measurement_key"
 var Size_notification_key = "Size_notification_key"
 let colorGray = UIColor(red: 96/255, green: 106/255, blue: 113/255, alpha: 1)
@@ -104,7 +105,7 @@ extension UIViewController: UIGestureRecognizerDelegate {
 
 extension String {
     func localize() -> String {
-        return NSLocalizedString(self, tableName: nil, bundle: Bundle(identifier: "org.cocoapods.findmysize")!, value: "", comment: "")
+        return NSLocalizedString(self, tableName: nil, bundle: bundleName!, value: "", comment: "")
     }
 }
 

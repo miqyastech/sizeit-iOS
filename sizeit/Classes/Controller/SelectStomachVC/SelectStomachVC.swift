@@ -55,17 +55,17 @@ class SelectStomachVC: UIViewController {
         self.btnAvarage.removeUnderline()
         self.btnRounder.removeUnderline()
         if index == 0 {
-            self.imgStomach.image = UIImage(named: "stomach_flatter", in: Bundle(identifier: "org.cocoapods.findmysize"), compatibleWith: nil)
+            self.imgStomach.image = UIImage(named: "stomach_flatter", in: bundleName, compatibleWith: nil)
             self.btnFlatter.underline()
             self.btnFlatter.setTitleColor(.black, for: .normal)
         }
         else if index == 1 {
             self.btnAvarage.underline()
-            self.imgStomach.image = UIImage(named: "stomach_average", in: Bundle(identifier: "org.cocoapods.findmysize"), compatibleWith: nil)
+            self.imgStomach.image = UIImage(named: "stomach_average", in: bundleName, compatibleWith: nil)
             self.btnAvarage.setTitleColor(.black, for: .normal)
         }
         else {
-            self.imgStomach.image = UIImage(named: "stomach_rounder", in: Bundle(identifier: "org.cocoapods.findmysize"), compatibleWith: nil)
+            self.imgStomach.image = UIImage(named: "stomach_rounder", in: bundleName, compatibleWith: nil)
             self.btnRounder.underline()
             self.btnRounder.setTitleColor(.black, for: .normal)
         }

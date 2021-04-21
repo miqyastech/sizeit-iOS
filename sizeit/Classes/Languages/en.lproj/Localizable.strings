@@ -5,6 +5,7 @@
   Created by Piyush on 20/04/21.
   
 */
+"FIND MY SIZE" = "FIND MY SIZE";
 "Select your height" = "Select your height";
 "height" = "height";
 "by dragging the ruler vertically" = "by dragging the ruler vertically";
@@ -18,6 +19,7 @@
 "kg" = "kg";
 "Continue" = "Continue";
 "Select Age" = "Select Age";
+"From the options below" = "From the options below";
 "Select your age" = "Select your age";
 "by dragging the slider" = "by dragging the slider";
 "Please select age" = "Please select age";
@@ -34,8 +36,6 @@
 "Average" = "Average";
 "Curvier" = "Curvier";
 "Record not found" = "Record not found";
-"Please choose height between 140 to 200 cm" = "Please choose height between 140 to 200 cm";
-"Please choose weight between 35 to 150 kg" = "Please choose weight between 35 to 150 kg";
 "FT" = "FT";
 "CM" = "CM";
 "LBS" = "LBS";
