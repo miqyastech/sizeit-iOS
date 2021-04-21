@@ -1,0 +1,6 @@
+framework module sizeit {
+  umbrella header "sizeit-umbrella.h"
+
+  export *
+  module * { export * }
+}

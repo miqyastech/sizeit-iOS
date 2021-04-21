@@ -1,0 +1,42 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by Piyush on 20/04/21.
+  
+*/
+"Select your height" = "حدد طولك";
+"height" = "height";
+"by dragging the ruler vertically" = "بسحب المسطرة عموديًا";
+"Privacy Policy" = "سياسة الخصوصية";
+"ft" = "قدم";
+"in" = "في";
+"cm" = "سم";
+"Select your weight" = "Select your weight";
+"weight" = "weight";
+"by dragging the ruler horizontally" = "by dragging the ruler horizontally";
+"kg" = "kg";
+"Continue" = "يكمل";
+"Select Age" = "Select Age";
+"Select your age" = "Select your age";
+"by dragging the slider" = "by dragging the slider";
+"Please select age" = "Please select age";
+"Privacy_Desc1" = "• Your body-dimension data will only be used for size recommendation purposes unless specified in the privacy policy of the entity that you are using our service through.";
+"Privacy_Desc2" = "• We do not share your personal information with any third party unless it is specified in the privacy policy of the entity that you are using our service through.";
+"Choose the stomach" = "Choose the stomach";
+"that most looks like yours" = "that most looks like yours";
+"Flatter" = "Flatter";
+"Average" = "Average";
+"Rounder" = "Rounder";
+"Choose the hips" = "Choose the hips";
+"that most looks like yours" = "that most looks like yours";
+"Narrower" = "Narrower";
+"Average" = "Average";
+"Curvier" = "Curvier";
+"Record not found" = "Record not found";
+"Please choose height between 140 to 200 cm" = "Please choose height between 140 to 200 cm";
+"Please choose weight between 35 to 150 kg" = "Please choose weight between 35 to 150 kg";
+"FT" = "FT";
+"CM" = "CM";
+"LBS" = "LBS";
+"KG" = "KG";

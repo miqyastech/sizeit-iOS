@@ -1,0 +1,16 @@
+PODS:
+  - sizeit (0.1.0)
+
+DEPENDENCIES:
+  - sizeit (from `../`)
+
+EXTERNAL SOURCES:
+  sizeit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  sizeit: ca87bbbe7261a47df3154a080ae3b241f72c5120
+
+PODFILE CHECKSUM: 63e2461f93e461cf1fe4a783e7603912ec066472
+
+COCOAPODS: 1.10.1
