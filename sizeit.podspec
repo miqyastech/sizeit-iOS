@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'sizeit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'This library is helping me to find what is my current size for particular products like, Skirt, T-shirts, Tops, and others.'
 
 # This description is used to generate tags and improve search results.
@@ -41,7 +41,7 @@ TODO: This library is helping me to find what is my current size for particular 
   s.dependency 'FBSDKCoreKit'
   s.dependency 'FBSDKLoginKit'
   
-  s.source_files = "Sizeit/**/*.{swift}"
+  s.source_files = "Sizeit/**/*.{swift,strings}"
   
   s.resources = "Sizeit/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
   

