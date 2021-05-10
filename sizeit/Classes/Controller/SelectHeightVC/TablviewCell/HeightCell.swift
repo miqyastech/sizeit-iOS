@@ -2,7 +2,7 @@
 //  HeightCell.swift
 //  Sizeit
 //
-//  Created by iMac on 12/04/21.
+//  Created by Jaydeep on 12/04/21.
 //
 
 import UIKit

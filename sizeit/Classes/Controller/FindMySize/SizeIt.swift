@@ -2,7 +2,7 @@
 //  SizeIt.swift
 //  Sizeit
 //
-//  Created by Zero thirteen on 11/04/21.
+//  Created by Jaydeep on 11/04/21.
 //
 
 import UIKit
@@ -62,5 +62,10 @@ public class SizeIt:UIViewController,SizeitTrackingDelegate {
     //USE : This function return selected size
     func SizeitTrackingFinish(size: String) {
         handlerUpdate(size)
+    }
+    
+    //USE : This function setup language
+    public func setupLanguage(isEnglish:Bool) {
+        AppLanuage = isEnglish ? SizeItLanguage.English.rawValue : SizeItLanguage.Arabic.rawValue
     }
 }

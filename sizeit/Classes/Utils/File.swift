@@ -1,8 +1,9 @@
 //
 //  File.swift
-//  findmysize
+//  sizeit
 //
-//  Created by Piyush on 21/04/21.
+//  Created by Jaydeep on 21/04/21.
 //
 
 import Foundation
+ 

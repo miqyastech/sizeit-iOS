@@ -1,9 +1,8 @@
 //
 //  Constant.swift
-//  Berry
+//  sizeit
 //
-//  Created by Haresh Bhai on 29/10/18.
-//  Copyright © 2018 Haresh Bhai. All rights reserved.
+//  Created by Jaydeep on 29/10/18.
 //
 
 import Foundation
@@ -38,6 +37,8 @@ var selectedAgeIndex: Int?
 var selectedStomachIndex: Int?
 var selectedHipsIndex: Int?
 
+var AppLanuage: String = "en"
+
 func resetData() {
     isFT = false
     heightIndex = nil
@@ -48,6 +49,11 @@ func resetData() {
     selectedAgeIndex = nil
     selectedStomachIndex = nil
     selectedHipsIndex = nil
+}
+
+enum SizeItLanguage: String {
+    case English = "en"
+    case Arabic = "ar"
 }
 
 func isKeyPresentInUserDefaults(key: String) -> Bool {
@@ -105,7 +111,13 @@ extension UIViewController: UIGestureRecognizerDelegate {
 
 extension String {
     func localize() -> String {
-        return NSLocalizedString(self, tableName: nil, bundle: bundleName!, value: "", comment: "")
+        if AppLanuage == SizeItLanguage.English.rawValue {
+            return localized("en")
+        }
+        else {
+            return localized("ar")
+        }
+//        return NSLocalizedString(self, tableName: nil, bundle: bundleName!, value: "", comment: "")
     }
 }
 
@@ -117,5 +129,14 @@ extension String {
         let range = (self as NSString).range(of: text)
         fullString.addAttributes(boldFontAttribute, range: range)
         return fullString
+    }
+}
+
+extension String {
+    func localized(_ lang:String) ->String {
+        let path = bundleName?.path(forResource: lang, ofType: "lproj")
+        let bundle = Bundle(path: path!)
+        
+        return NSLocalizedString(self, tableName: nil, bundle: bundle!, value: "", comment: "")
     }
 }

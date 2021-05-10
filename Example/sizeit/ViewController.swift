@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        obj.setupLanguage(isEnglish: true)
         //MARK:- Facebook Event
         /*SizeitUtils().initUsers(userID: "1234", hashSize: obj.hasSizes(), data: "test")
         SizeitUtils().visitProduct(userID: "1234", product_sku: "Skirts-S,M,L,XL,XXL", hashSize: obj.hasSizes(), data: "")

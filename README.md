@@ -74,6 +74,12 @@ obj.handlerUpdate = {[weak self] size in
 }
 ```
 
+Change language: English - true, Arabic - false
+```ruby
+let obj = SizeIt()
+obj.setupLanguage(isEnglish: true)
+```
+
 ## Author
 
 miqyastech, abdulla@miqyas.net

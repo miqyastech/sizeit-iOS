@@ -2,7 +2,7 @@
 //  WidthCell.swift
 //  Sizeit
 //
-//  Created by Piyush on 13/04/21.
+//  Created by Jaydeep on 13/04/21.
 //
 
 import UIKit

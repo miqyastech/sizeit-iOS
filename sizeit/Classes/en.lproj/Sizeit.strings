@@ -1,0 +1,126 @@
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "0j6-Q6-6ka"; */
+"0j6-Q6-6ka.normalTitle" = "Continue";
+
+/* Class = "UITextField"; placeholder = "Years"; ObjectID = "0ox-k2-qCx"; */
+"0ox-k2-qCx.placeholder" = "Years";
+
+/* Class = "UIButton"; normalTitle = "Rounder"; ObjectID = "1el-Ic-6YC"; */
+"1el-Ic-6YC.normalTitle" = "Rounder";
+
+/* Class = "UILabel"; text = "FIND MY SIZE"; ObjectID = "2fc-fY-I9Y"; */
+"2fc-fY-I9Y.text" = "FIND MY SIZE";
+
+/* Class = "UIButton"; normalTitle = "Average"; ObjectID = "32h-fe-Y0s"; */
+"32h-fe-Y0s.normalTitle" = "Average";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "4yg-Ki-vho"; */
+"4yg-Ki-vho.normalTitle" = "Continue";
+
+/* Class = "UILabel"; text = "Weight"; ObjectID = "7Kv-fr-4kd"; */
+"7Kv-fr-4kd.text" = "Weight";
+
+/* Class = "UIButton"; normalTitle = "FT"; ObjectID = "7Mt-YZ-kFL"; */
+"7Mt-YZ-kFL.normalTitle" = "FT";
+
+/* Class = "UIButton"; normalTitle = "Flatter"; ObjectID = "7n4-tG-IyZ"; */
+"7n4-tG-IyZ.normalTitle" = "Flatter";
+
+/* Class = "UITextField"; placeholder = "Inches"; ObjectID = "9Q8-4j-nEl"; */
+"9Q8-4j-nEl.placeholder" = "Inches";
+
+/* Class = "UILabel"; text = "FIND MY SIZE"; ObjectID = "Cvq-YH-Jeg"; */
+"Cvq-YH-Jeg.text" = "FIND MY SIZE";
+
+/* Class = "UILabel"; text = "Height"; ObjectID = "DHZ-JA-8v0"; */
+"DHZ-JA-8v0.text" = "Height";
+
+/* Class = "UIButton"; normalTitle = "Skirts"; ObjectID = "HpG-ip-5pe"; */
+"HpG-ip-5pe.normalTitle" = "Skirts";
+
+/* Class = "UITextField"; placeholder = "Lbs"; ObjectID = "MbR-RI-SHR"; */
+"MbR-RI-SHR.placeholder" = "Lbs";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NQ5-dj-QyS"; */
+"NQ5-dj-QyS.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Feet"; ObjectID = "St6-Bk-HpM"; */
+"St6-Bk-HpM.placeholder" = "Feet";
+
+/* Class = "UIButton"; normalTitle = "LBS"; ObjectID = "TIL-cr-Hve"; */
+"TIL-cr-Hve.normalTitle" = "LBS";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "Tod-nR-eb4"; */
+"Tod-nR-eb4.normalTitle" = "Continue";
+
+/* Class = "UIButton"; normalTitle = "Select Age"; ObjectID = "TrD-uX-ZOq"; */
+"TrD-uX-ZOq.normalTitle" = "Select Age";
+
+/* Class = "UIButton"; normalTitle = "Find My Fit"; ObjectID = "U1k-w4-8bj"; */
+"U1k-w4-8bj.normalTitle" = "Find My Fit";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "ZIX-tS-GBc"; */
+"ZIX-tS-GBc.normalTitle" = "Continue";
+
+/* Class = "UISegmentedControl"; aG7-zM-bWr.segmentTitles[0] = "US       "; ObjectID = "aG7-zM-bWr"; */
+"aG7-zM-bWr.segmentTitles[0]" = "US       ";
+
+/* Class = "UISegmentedControl"; aG7-zM-bWr.segmentTitles[1] = "EU        "; ObjectID = "aG7-zM-bWr"; */
+"aG7-zM-bWr.segmentTitles[1]" = "EU        ";
+
+/* Class = "UIButton"; normalTitle = "CM"; ObjectID = "aKg-4P-Eqm"; */
+"aKg-4P-Eqm.normalTitle" = "CM";
+
+/* Class = "UIButton"; normalTitle = "KG"; ObjectID = "ctf-l5-n64"; */
+"ctf-l5-n64.normalTitle" = "KG";
+
+/* Class = "UIButton"; normalTitle = "Narrower"; ObjectID = "cyn-eJ-wOb"; */
+"cyn-eJ-wOb.normalTitle" = "Narrower";
+
+/* Class = "UIButton"; normalTitle = "Curvier"; ObjectID = "dyA-2V-dub"; */
+"dyA-2V-dub.normalTitle" = "Curvier";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "f04-xj-xJr"; */
+"f04-xj-xJr.normalTitle" = "Continue";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hSi-F8-ett"; */
+"hSi-F8-ett.text" = "Label";
+
+/* Class = "UILabel"; text = "FIND MY SIZE"; ObjectID = "hwl-vb-GvD"; */
+"hwl-vb-GvD.text" = "FIND MY SIZE";
+
+/* Class = "UIButton"; normalTitle = "Average"; ObjectID = "iZc-2E-Ar5"; */
+"iZc-2E-Ar5.normalTitle" = "Average";
+
+/* Class = "UILabel"; text = "Fit Advisor"; ObjectID = "jt8-Gd-toO"; */
+"jt8-Gd-toO.text" = "Fit Advisor";
+
+/* Class = "UILabel"; text = "Enter your details below\nto begin a size recommendation"; ObjectID = "kvJ-lN-Z39"; */
+"kvJ-lN-Z39.text" = "Enter your details below\nto begin a size recommendation";
+
+/* Class = "UIButton"; normalTitle = "Pants"; ObjectID = "lAA-OV-WOZ"; */
+"lAA-OV-WOZ.normalTitle" = "Pants";
+
+/* Class = "UILabel"; text = "• Your body-dimension data will only be used for size recommendation purposes unless specified in the privacy policy of the entity that you are using our service through."; ObjectID = "mbt-Qo-WCp"; */
+"mbt-Qo-WCp.text" = "• Your body-dimension data will only be used for size recommendation purposes unless specified in the privacy policy of the entity that you are using our service through.";
+
+/* Class = "UILabel"; text = "• We do not share your personal information with any third party unless it is specified in the privacy policy of the entity that you are using our service through."; ObjectID = "oHD-FL-L3L"; */
+"oHD-FL-L3L.text" = "• We do not share your personal information with any third party unless it is specified in the privacy policy of the entity that you are using our service through.";
+
+/* Class = "UILabel"; text = "FIND MY SIZE"; ObjectID = "oZE-cX-y0T"; */
+"oZE-cX-y0T.text" = "FIND MY SIZE";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "trt-CB-Ge2"; */
+"trt-CB-Ge2.normalTitle" = "Continue";
+
+/* Class = "UILabel"; text = "Age"; ObjectID = "uF0-Ha-cRg"; */
+"uF0-Ha-cRg.text" = "Age";
+
+/* Class = "UILabel"; text = "FIND MY SIZE"; ObjectID = "vxj-JH-du7"; */
+"vxj-JH-du7.text" = "FIND MY SIZE";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "w3m-tz-gnV"; */
+"w3m-tz-gnV.text" = "Label";
+
+/* Class = "UILabel"; text = "FIND MY SIZE"; ObjectID = "zBz-2z-0hv"; */
+"zBz-2z-0hv.text" = "FIND MY SIZE";

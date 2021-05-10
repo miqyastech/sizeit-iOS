@@ -1,9 +1,8 @@
 //
 //  ApiManager.swift
-//  Berry
+//  sizeit
 //
-//  Created by Haresh Bhai on 29/10/18.
-//  Copyright © 2018 Haresh Bhai. All rights reserved.
+//  Created by Jaydeep on 29/10/18.
 //
 
 import UIKit

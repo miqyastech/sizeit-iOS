@@ -1,9 +1,8 @@
 //
 //  ReachabilityTest.swift
-//  WFS
+//  sizeit
 //
-//  Created by Haresh Bhai on 11/13/18.
-//  Copyright © 2018 Haresh Bhai. All rights reserved.
+//  Created by Jaydeep on 11/13/18.
 //
 
 import Foundation

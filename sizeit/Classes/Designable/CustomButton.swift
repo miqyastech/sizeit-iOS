@@ -1,6 +1,6 @@
 //
 //  CustomButton.swift
-//  Pocket
+//  Sizeit
 //
 //  Created by Jaydeep on 29/5/19.
 //  Copyright © 2019 Jaydeep. All rights reserved.
