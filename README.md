@@ -58,13 +58,15 @@ This function will return the product size of the user as per inputted informati
 3. If you want to open user inputs screens like height, weight, age, etc.. then you can do it via the below code.
 ```ruby
 let obj = SizeIt()
-obj.openSizePopup(userId: "1", attributeName: "x",controller: self)
+obj.openSizePopup(userId: "1", attributeName: "x",controller: self,key:"FVACX-SFSXZSDA")
 ```
 userId - You will need to add your current user id here.
 
 attributeName - You will need to add your product name here.
 
 controller - You will need to add your current viewcontroler
+
+key - You will need to pass API request key.
 
 It will return the product attribute size into handlerUpdate function if it is available in local storage.
 ```ruby
@@ -78,6 +80,103 @@ Change language: English - true, Arabic - false
 ```ruby
 let obj = SizeIt()
 obj.setupLanguage(isEnglish: true)
+```
+
+This function will return bool value like either true or false if size attribute is avilable or not
+x - Attribute name like "Skirts-S,M,L,XL,XXL"
+```ruby
+let obj = SizeIt()
+obj.isAttributeSizeAvailable(attributeName: "x")
+```
+
+## Facebook Events
+
+You can track your user and product events. There are several functions that use to track user events.
+
+- How many users are visits the application (With size, Without size).
+- Which user visits which product (With size, Without size).
+- Home many users add the product to his cart (With size, Without size).
+- How many users buy the product (With size, Without size).
+- How many users return the product (With size, Without size).
+- Custom events (You can add your custom event if you want).
+
+Now, You can add your events to Facebook by calling functions that are available in "SizeitUtils.swift" file in the library section.
+
+Example to add an event:
+
+1. Call this function when the user opens the app.
+
+```ruby
+/**
+ * ADD USER INTO FB EVENT
+ * userId :- CURRENT LOGGED IN USER ID.
+ * hashSize :- PASS TRUE IF USER HAS SIZE.
+ * data :- YOU CAN ADD OTHER STRING INFORMATION FOR FUTURE USE
+ */
+SizeitUtils().initUsers(userID: "1", hashSize: SizeIt().isAttributeSizeAvailable(attributeName: "x"), data: "user_event")
+```
+
+2. Call this function when the user opens the product details screen.
+
+```ruby
+/**
+ * ADD VISIT PRODUCT EVENT
+ * userId :- CURRENT LOGGED IN USER ID.
+ * product_sku - PRODUCT NAME OF PRODUCT ID
+ * hashSize :- PASS TRUE IF USER HAS SIZE.
+ * data :- YOU CAN ADD OTHER STRING INFORMATION FOR FUTURE USE
+ */
+SizeitUtils().visitProduct(userID: "1", product_sku: "miqyas_fit", hashSize: SizeIt().isAttributeSizeAvailable(attributeName: "x"), data: "visit_product")
+```
+
+3. Call this function when the user adds the product to the cart.
+
+```ruby
+/**
+ * ADD PRODUCT TO CART EVENT
+ * userId :- CURRENT LOGGED IN USER ID.
+ * product_sku - PRODUCT NAME OF PRODUCT ID
+ * hashSize :- PASS TRUE IF USER HAS SIZE.
+ * data :- YOU CAN ADD OTHER STRING INFORMATION FOR FUTURE USE
+ */
+SizeitUtils().addProductToCart(userID: "1", product_sku: "miqyas_fit", hashSize: SizeIt().isAttributeSizeAvailable(attributeName: "x"), data: "add_product_to_cart")
+```
+
+4. Call this function when the user buys the product.
+
+```ruby
+/**
+ * BUY PRODUCT EVENT
+ * userId :- CURRENT LOGGED IN USER ID.
+ * product_sku - PRODUCT NAME OF PRODUCT ID
+ * hashSize :- PASS TRUE IF USER HAS SIZE.
+ * data :- YOU CAN ADD OTHER STRING INFORMATION FOR FUTURE USE
+ */
+SizeitUtils().buyProduct(userID: "1", product_sku: "miqyas_fit", hashSize: SizeIt().isAttributeSizeAvailable(attributeName: "x"), data: "buy_product")
+```
+
+5. Call this function when the user returns the product.
+
+```ruby
+/**
+ * RETURN PRODUCT EVENT
+ * userId :- CURRENT LOGGED IN USER ID.
+ * product_sku - PRODUCT NAME OF PRODUCT ID
+ * hashSize :- PASS TRUE IF USER HAS SIZE.
+ * data :- YOU CAN ADD OTHER STRING INFORMATION FOR FUTURE USE
+ */
+SizeitUtils().returnProduct(userID: "1", product_sku: "miqyas_fit", hashSize: SizeIt().isAttributeSizeAvailable(attributeName: "x"), data: "return_product")
+```
+
+6. Call this function when you need to add custom event when ever you want.
+
+```ruby
+/**
+ *  CUSTOM EVENT
+ * userID   - CURRENT LOGGED IN USER ID.
+ * param   - ADD CUSTOM PARAMS WHAT EVER YOU WANT.
+ */
+SizeitUtils().addCustomEvent(userID: "1", param: ["value":"5"])
 ```
 
 ## Author

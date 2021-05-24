@@ -113,7 +113,7 @@ public class SizeitUtils: NSObject {
     /**
         * @param activity
         * @param userID   - CURRENT LOGGED IN USER ID.
-        * @param bundle   - ADD CUSTOM PARAMS WHAT EVER YOU WANT.
+        * @param param   - ADD CUSTOM PARAMS WHAT EVER YOU WANT.
         */
     public func addCustomEvent(userID: String, param: [String : Any]) {
         var params =  param

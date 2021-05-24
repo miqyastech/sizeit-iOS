@@ -48,7 +48,8 @@ public class SizeIt:UIViewController,SizeitTrackingDelegate {
     }
     
     //USE : This function open size picker
-    public func openSizePopup(userId:String,attributeName:String,controller:UIViewController) {       
+    public func openSizePopup(userId:String,attributeName:String,controller:UIViewController,key:String) {
+        apiKey = key
         kUserId = userId
         let obj = mainStoryboard.instantiateViewController(withIdentifier: "SelectHeightVC") as! SelectHeightVC
         obj.delegate = self
@@ -68,4 +69,19 @@ public class SizeIt:UIViewController,SizeitTrackingDelegate {
     public func setupLanguage(isEnglish:Bool) {
         AppLanuage = isEnglish ? SizeItLanguage.English.rawValue : SizeItLanguage.Arabic.rawValue
     }
+    
+    //USE : This function is return bool value like either true or false if size attribute is avilable or not
+    public func isAttributeSizeAvailable(attributeName:String) -> Bool {
+        if let jsonString = userDefault.string(forKey: Measurement_key) {
+            let sizeJson = JSON.init(parseJSON:jsonString)
+            let arrSize = sizeJson["data"]["sizes"].arrayValue
+            if let isSizeAvailale = arrSize.first(where: {$0["name"].stringValue.lowercased() == attributeName.lowercased()}) {
+                if isSizeAvailale["size"].stringValue.lowercased() != "not available".lowercased() {
+                    return true
+                }
+            }
+        }
+        return false
+    }
+    
 }
