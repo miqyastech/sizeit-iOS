@@ -39,6 +39,12 @@ var selectedHipsIndex: Int?
 
 var AppLanuage: String = "en"
 
+let countryLocale = NSLocale.current
+let countryCode = countryLocale.regionCode
+let country = (countryLocale as NSLocale).displayName(forKey: NSLocale.Key.countryCode, value: countryCode ?? "")
+
+var platform = "iOS"
+
 func resetData() {
     isFT = false
     heightIndex = nil

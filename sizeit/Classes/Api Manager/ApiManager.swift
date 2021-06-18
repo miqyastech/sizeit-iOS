@@ -36,4 +36,27 @@ class ApiManager: NSObject {
             }
         }
     }
+    
+    
+    func MakePostAPIWithoutVC(name:String, params:[String:Any], progress: Bool = true, completionHandler: @escaping (NSDictionary?, String?)-> Void) {
+        
+        guard ReachabilityTest.isConnectedToNetwork() else {
+            showAlert(message: "No internet connection available", vc: UIApplication.shared.keyWindow?.rootViewController ?? UIViewController())
+            return
+        }
+        
+        if progress {
+            
+        }
+        
+        Alamofire.request(name, method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).responseJSON { (response) in
+            if response.value != nil {
+                completionHandler(response.value as? NSDictionary, nil)
+            }
+            else {
+                completionHandler(nil, response.error?.localizedDescription)
+            }
+        }
+    }
+    
 }

