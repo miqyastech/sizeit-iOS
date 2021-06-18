@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'sizeit'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'This library is helping me to find what is my current size for particular products like, Skirt, T-shirts, Tops, and others.'
 
 # This description is used to generate tags and improve search results.

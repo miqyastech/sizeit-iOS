@@ -89,6 +89,72 @@ let obj = SizeIt()
 obj.isAttributeSizeAvailable(attributeName: "x")
 ```
 
+
+## Event Tracking
+
+There are several types of events added in this library that described below.
+
+- 'getFitted' = Call this event when user click on "Find My Size" button.
+- 'visitHome' = Call this event every time when user open the application.
+- 'visitProduct' = Call this event when user visit/open product.
+- 'addToCart' = Call this event when user add product to the cart.
+- 'buy' = Call this event when user buy the product.
+- 'return' = Call this event when user return the product.
+
+## Brief description about how to call event with required parameters.
+
+Parameters | Value | Description
+--- | --- | ---
+eventType | getFitted, visitHome, visitProduct, addToCart, buy, return | Type of events
+projectName | Project name i.e. abc     | Write name of your app
+origin | Website URL i.e. https://www.website.com | Write name of your Website name
+platform | Platform name i.e. iOS | Write platform name (i.e. web, android, iOS, etc...)
+userId | User id i.e 100 | Enter userId if user is login otherwise pass empty or null library will pass deviceId if user id is not available
+products | "products": [ { "sku": "AS123", "productSkuAbTest": true }, { "sku": "AS987", "productSkuAbTest": false } ] | This is the products list when user visit, buy, return products then add it like this format.
+orderValue | Order Value i.e 100 | Enter total value of the order.
+abTest | hash size of not value i.e true, false | If user tried to find his size from "find my size" button then pass true else false
+region | Name of the region (US) | Enter name of the region
+
+1. getFitted event - call this event when user click on find my size button.
+
+```ruby
+//project_name = enter your application name here i.e. SizeIt
+//website_url = enter your website url here i.e. https://www.website.com
+//user_id = enter your userId here is user is login in the app otherwise pass empty or null.
+SizeitAPIEvent().getFitted(projectName: "project_name", origin: "website_url", userId: "user_id")
+```
+
+2. visitHome event - call this event when user visit home screen.
+
+```ruby
+SizeitAPIEvent().visitHome(projectName: "project_name", origin: "website_url", userId: "user_id")
+```
+
+3. visitProduct event - call this event when user visit product details screen.
+
+```ruby
+var arrProduct = [[String:Any]]()
+arrProduct.append(["sku" : "FU21-0000012B", "productSkuAbTest":true])
+SizeitAPIEvent().visitProduct(projectName: "project_name", origin: "website_url", userId: "user_id", productsList: arrProduct, orderValue: "order_value")
+```
+
+4. addToCart event - call this event when user add product to cart.
+
+```ruby
+SizeitAPIEvent().addToCart(projectName: "project_name", origin: "website_url", userId: "user_id", productsList: productsList, orderValue: "order_value")
+```
+
+5. buy event - call this event when user buy product.
+
+```ruby
+SizeitAPIEvent().buyProduct(projectName: "project_name", origin: "website_url", userId: "user_id", productsList: productsList, orderValue: "order_value")
+```
+
+6. return event - call this event when user return product.
+
+```ruby
+SizeitAPIEvent().returnProduct(projectName: "project_name", origin: "website_url", userId: "user_id", productsList: productsList, orderValue: "order_value")
+```
 ## Facebook Events
 
 You can track your user and product events. There are several functions that use to track user events.
