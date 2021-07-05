@@ -110,7 +110,21 @@ projectName | Project name i.e. abc     | Write name of your app
 origin | Website URL i.e. https://www.website.com | Write name of your Website name
 platform | Platform name i.e. iOS | Write platform name (i.e. web, android, iOS, etc...)
 userId | User id i.e 100 | Enter userId if user is login otherwise pass empty or null library will pass deviceId if user id is not available
-products | "products": [ { "sku": "AS123", "productSkuAbTest": true }, { "sku": "AS987", "productSkuAbTest": false } ] | This is the products list when user visit, buy, return products then add it like this format.
+products | "products": [ { "sku": "AS123", "productSkuAbTest": true }, { "sku": "AS987", "productSkuAbTest": false } ] | This is the products list when user visit, buy, return products then add it like this format. <td>This is the products list when user visit, buy, return
+            products then add it like this format.
+            <br />
+            <b>sku</b> - product sku name
+            <br />
+            <b>productSkuAbTest</b> - if user size for this product n1 exists the set true else set else: false
+            <br />
+            i.e.
+            <br />
+            <code>
+            if product_has_size == true
+                return true
+            else
+                return true
+            </code>
 orderValue | Order Value i.e 100 | Enter total value of the order.
 abTest | hash size of not value i.e true, false | If user tried to find his size from "find my size" button then pass true else false
 region | Name of the region (US) | Enter name of the region
