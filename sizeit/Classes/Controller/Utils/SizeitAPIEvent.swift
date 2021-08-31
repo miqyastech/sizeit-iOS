@@ -27,16 +27,6 @@ public class SizeitAPIEvent: NSObject {
      * "origin": "https://storename.com", - enter your origin/website url
      * "platform": "iOS",
      * "userId": "userId", - If user is login then pass userId other wise pass null or empty
-     * "products": [
-     * {
-     * "sku": "sku_id_n1", - enter n1 product sku id
-     * "productSkuAbTest": - if user size for this product exists: true, else: false
-     * },
-     * {
-     * "sku": "sku_id_n2", - enter n2 product sku id
-     * "productSkuAbTest": - if user size for this product exists: true, else: false
-     * }
-     * ],
      * "orderValue": "product_value", - enter value/price of this product
      * "abTest": "true/false", - if user has no size the pass = false, else: true
      * "region": "region name" - enter region of device
@@ -68,16 +58,6 @@ public class SizeitAPIEvent: NSObject {
      * "origin": "https://storename.com", - enter your origin/website url
      * "platform": "android",
      * "userId": "userId", - If user is login then pass userId other wise pass null or empty
-     * "products": [
-     * {
-     * "sku": "sku_id_n1", - enter n1 product sku id
-     * "productSkuAbTest": - if user size for this product exists: true, else: false
-     * },
-     * {
-     * "sku": "sku_id_n2", - enter n2 product sku id
-     * "productSkuAbTest": - if user size for this product exists: true, else: false
-     * }
-     * ],
      * "orderValue": "product_value", - enter value/price of this product
      * "abTest": "true/false", - if user has no size the pass = false, else: true
      * "region": "region name" - enter region of device
@@ -111,13 +91,17 @@ public class SizeitAPIEvent: NSObject {
      * "userId": "userId", - If user is login then pass userId other wise pass null or empty
      * "products": [
      * {
-     * "sku": "sku_id_n1", - enter n1 product sku id
+     * "price": "100",- enter product price
+     * "currency": "SAR",- enter currency
+     * "product_id": "sku_id_n1", - enter n1 product sku id
      * "productSkuAbTest": - if user size for this product n1 exists the set true else set else: false
      * },
      * {
-     * "sku": "sku_id_n2", - enter n2 product sku id
-     * "productSkuAbTest": if user size for this product n2 exists the set true else set else: false
-     * }
+     * "price": "100",- enter product price
+     * "currency": "SAR",- enter currency
+     * "product_id": "sku_id_n1", - enter n1 product sku id
+     * "productSkuAbTest": - if user size for this product n1 exists the set true else set else: false
+     * },
      * ],
      * "orderValue": "product_value", - enter total value/price of those products
      * "abTest": "true/false", - if user has no size the pass = false, else: true
@@ -155,13 +139,17 @@ public class SizeitAPIEvent: NSObject {
      * "userId": "userId", - If user is login then pass userId other wise pass null or empty
      * "products": [
      * {
-     * "sku": "sku_id_n1", - enter n1 product sku id
+     * "price": "100",- enter product price
+     * "currency": "SAR",- enter currency
+     * "product_id": "sku_id_n1", - enter n1 product sku id
+     * "productSkuAbTest": - if user size for this product n1 exists the set true else set else: false
+     * },,
+     * {
+     * "price": "100",- enter product price
+     * "currency": "SAR",- enter currency
+     * "product_id": "sku_id_n1", - enter n1 product sku id
      * "productSkuAbTest": - if user size for this product n1 exists the set true else set else: false
      * },
-     * {
-     * "sku": "sku_id_n2", - enter n2 product sku id
-     * "productSkuAbTest": if user size for this product n2 exists the set true else set else: false
-     * }
      * ],
      * "orderValue": "product_value", - enter total value/price of those products
      * "abTest": "true/false", - if user has no size the pass = false, else: true
@@ -198,13 +186,17 @@ public class SizeitAPIEvent: NSObject {
      * "userId": "userId", - If user is login then pass userId other wise pass null or empty
      * "products": [
      * {
-     * "sku": "sku_id_n1", - enter n1 product sku id
+     * "price": "100",- enter product price
+     * "currency": "SAR",- enter currency
+     * "product_id": "sku_id_n1", - enter n1 product sku id
+     * "productSkuAbTest": - if user size for this product n1 exists the set true else set else: false
+     * },,
+     * {
+     * "price": "100",- enter product price
+     * "currency": "SAR",- enter currency
+     * "product_id": "sku_id_n1", - enter n1 product sku id
      * "productSkuAbTest": - if user size for this product n1 exists the set true else set else: false
      * },
-     * {
-     * "sku": "sku_id_n2", - enter n2 product sku id
-     * "productSkuAbTest": if user size for this product n2 exists the set true else set else: false
-     * }
      * ],
      * "orderValue": "product_value", - enter total value/price of those products
      * "abTest": "true/false", - if user has no size the pass = false, else: true
@@ -241,13 +233,17 @@ public class SizeitAPIEvent: NSObject {
      * "userId": "userId", - If user is login then pass userId other wise pass null or empty
      * "products": [
      * {
-     * "sku": "sku_id_n1", - enter n1 product sku id
+     * "price": "100",- enter product price
+     * "currency": "SAR",- enter currency
+     * "product_id": "sku_id_n1", - enter n1 product sku id
+     * "productSkuAbTest": - if user size for this product n1 exists the set true else set else: false
+     * },,
+     * {
+     * "price": "100",- enter product price
+     * "currency": "SAR",- enter currency
+     * "product_id": "sku_id_n1", - enter n1 product sku id
      * "productSkuAbTest": - if user size for this product n1 exists the set true else set else: false
      * },
-     * {
-     * "sku": "sku_id_n2", - enter n2 product sku id
-     * "productSkuAbTest": if user size for this product n2 exists the set true else set else: false
-     * }
      * ],
      * "orderValue": "product_value", - enter total value/price of those products
      * "abTest": "true/false", - if user has no size the pass = false, else: true

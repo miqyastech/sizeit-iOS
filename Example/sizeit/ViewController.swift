@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         // sku = product sku id.
         // productSkuAbTest = if user has size of this particular product like x, xx, L then set TRUE otherwise set FALSE
 //        var arrProduct = [[String:Any]]()
-//        arrProduct.append(["sku" : "FU21-0000012B", "productSkuAbTest":true])
+//        arrProduct.append(["price":"100","currency":"sar","product_id" : "FU21-0000012B", "productSkuAbTest":true])
 //        SizeitAPIEvent().visitProduct(projectName: "femi9", origin: "https://www.femi9.com", userId: "123", productsList: arrProduct, orderValue: "560")
         
         //4. event - addToCart
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
         // sku = product sku id.
         // productSkuAbTest = if user has size of this particular product like x, xx, L then set TRUE otherwise set FALSE
 //        var arrProduct1 = [[String:Any]]()
-//        arrProduct1.append(["sku" : "FU21-0000012B", "productSkuAbTest":true])
+//        arrProduct1.append(["price":"100","currency":"sar","product_id" : "FU21-0000012B", "productSkuAbTest":true])
 //        SizeitAPIEvent().addToCart(projectName: "femi9", origin: "https://www.femi9.com", userId: "123", productsList: arrProduct1, orderValue: "560")
         
         //5. event - buy
@@ -81,9 +81,8 @@ class ViewController: UIViewController {
         // sku = product sku id.
         // productSkuAbTest = if user has size of this particular product like x, xx, L then set TRUE otherwise set FALSE
 //        var arrProduct2 = [[String:Any]]()
-//        arrProduct2.append(["sku" : "FU21-0000012B", "productSkuAbTest":true])
-//        arrProduct2.append(["sku" : "FU21-0000097A", "productSkuAbTest":true])
-//
+//        arrProduct2.append(["price":"100","currency":"sar","product_id" : "FU21-0000012B", "productSkuAbTest":true])
+//        arrProduct2.append(["price":"100","currency":"sar","product_id" : "FU21-0000097A", "productSkuAbTest":true])
 //        SizeitAPIEvent().buyProduct(projectName: "femi9", origin: "https://www.femi9.com", userId: "123", productsList: arrProduct2, orderValue: "560")
         
         //6. event - return
@@ -91,7 +90,7 @@ class ViewController: UIViewController {
         // sku = product sku id.
         // productSkuAbTest = if user has size of this particular product like x, xx, L then set TRUE otherwise set FALSE
 //        var arrProduct3 = [[String:Any]]()
-//        arrProduct3.append(["sku" : "FU21-0000012B", "productSkuAbTest":true])
+//        arrProduct3.append(["price":"100","currency":"sar","product_id" : "FU21-0000012B", "productSkuAbTest":true])
 //        SizeitAPIEvent().returnProduct(projectName: "femi9", origin: "https://www.femi9.com", userId: "123", productsList: arrProduct3, orderValue: "560")
         
     }
