@@ -13,13 +13,15 @@ PODS:
     - FBSDKLoginKit/Login (= 9.2.0)
   - FBSDKLoginKit/Login (9.2.0):
     - FBSDKCoreKit (~> 9.2.0)
+  - IQKeyboardManagerSwift (6.5.9)
   - ObjectMapper (4.2.0)
   - ReachabilitySwift (5.0.0)
-  - sizeit (0.1.0):
+  - sizeit (0.1.6):
     - Alamofire (~> 4.9.1)
     - AlamofireSwiftyJSON (~> 1.0.2)
     - FBSDKCoreKit
     - FBSDKLoginKit
+    - IQKeyboardManagerSwift
     - ObjectMapper (~> 4.2.0)
     - ReachabilitySwift (~> 5.0.0)
     - SwiftyJSON (~> 4.3.0)
@@ -34,6 +36,7 @@ SPEC REPOS:
     - AlamofireSwiftyJSON
     - FBSDKCoreKit
     - FBSDKLoginKit
+    - IQKeyboardManagerSwift
     - ObjectMapper
     - ReachabilitySwift
     - SwiftyJSON
@@ -47,11 +50,12 @@ SPEC CHECKSUMS:
   AlamofireSwiftyJSON: 74ee3804bed06d07857daf1eeb1615c85dba3997
   FBSDKCoreKit: dace5abafc2fd9272733e6d027bcf18102712117
   FBSDKLoginKit: 43f377b451d391f5bc9dd774f51a391db1072029
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
-  sizeit: b6f617b68746b67bed3af88bdaf6daf7e2fd1b55
+  sizeit: a4c74a7786c71e0c545e1f2a8fcf92d01e1913d9
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
 PODFILE CHECKSUM: 63e2461f93e461cf1fe4a783e7603912ec066472
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

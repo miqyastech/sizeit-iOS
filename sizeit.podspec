@@ -40,6 +40,7 @@ TODO: This library is helping me to find what is my current size for particular 
   s.dependency 'ObjectMapper', '~> 4.2.0'
   s.dependency 'FBSDKCoreKit'
   s.dependency 'FBSDKLoginKit'
+  s.dependency 'IQKeyboardManagerSwift'
   
   s.source_files = "Sizeit/**/*.{swift,strings}"
   

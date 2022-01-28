@@ -60,6 +60,19 @@ public class SizeIt:UIViewController,SizeitTrackingDelegate {
         controller.present(nav, animated: true, completion: nil)
     }
     
+    public func openNewSizePopup(userId:String,attributeName:String,controller:UIViewController,key:String) {
+        apiKey = key
+        kUserId = userId
+        let obj = mainStoryboard.instantiateViewController(withIdentifier: "NewHeightWeightVC") as! NewHeightWeightVC
+//        obj.delegate = self
+//        obj.categoryName = attributeName
+        let nav = UINavigationController(rootViewController: obj)
+        nav.isNavigationBarHidden = true
+        nav.modalTransitionStyle = .coverVertical
+        nav.modalPresentationStyle = .currentContext
+        controller.present(nav, animated: true, completion: nil)
+    }
+    
     //USE : This function return selected size
     func SizeitTrackingFinish(size: String) {
         handlerUpdate(size)

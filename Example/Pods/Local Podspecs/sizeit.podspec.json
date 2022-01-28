@@ -1,6 +1,6 @@
 {
   "name": "sizeit",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "summary": "This library is helping me to find what is my current size for particular products like, Skirt, T-shirts, Tops, and others.",
   "description": "TODO: This library is helping me to find what is my current size for particular products like, Skirt, T-shirts, Tops, and others.",
   "homepage": "https://github.com/miqyastech/sizeit-iOS",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/miqyastech/sizeit-iOS.git",
-    "tag": "0.1.0"
+    "tag": "0.1.6"
   },
   "module_name": "sizeit",
   "platforms": {
@@ -42,9 +42,12 @@
     ],
     "FBSDKLoginKit": [
 
+    ],
+    "IQKeyboardManagerSwift": [
+
     ]
   },
-  "source_files": "Sizeit/**/*.{swift}",
+  "source_files": "Sizeit/**/*.{swift,strings}",
   "resources": "Sizeit/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}",
   "swift_version": "4.0"
 }
