@@ -58,6 +58,13 @@ class HipsVC: UIViewController {
         btnContinueTitle.setTitle("Continue".localize(), for: .normal)
         
         imgBG.image = imgBGMain
+        
+        if AppLanuage == SizeItLanguage.Arabic.rawValue {
+            UIView.appearance().semanticContentAttribute = .forceRightToLeft
+            
+            btnContinueTitle.contentEdgeInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
+            btnContinueTitle.imageEdgeInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
+        }
     }
 }
 
@@ -66,6 +73,11 @@ class HipsVC: UIViewController {
 extension HipsVC {
     
     @IBAction func btnContinueAction(_ sender:UIButton) {
+        let arr = arrBodyTypeModel.filter({$0.isSelected})
+        if arr.count == 0{
+            showAlert(message: "Please select any hips".localize(), vc: self)
+            return
+        }
         let obj = mainStoryboard.instantiateViewController(withIdentifier: "FinalOutlputVC") as! FinalOutlputVC
         obj.imgBGMain = imgBGMain
         self.navigationController?.pushViewController(obj, animated: true)

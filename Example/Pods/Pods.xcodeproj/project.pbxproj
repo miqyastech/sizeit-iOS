@@ -336,6 +336,11 @@
 		8801277CB3D31327C54D07B7E68B99E1 /* FBSDKCoreKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 962F3E989B62AEC4F3FEC5F36207EB38 /* FBSDKCoreKit-dummy.m */; };
 		88040E9427A79C7B00F2680F /* MavenPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88040E9327A79C7B00F2680F /* MavenPro-Medium.ttf */; };
 		88040E9727A79DE100F2680F /* FinalOutlputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88040E9627A79DE100F2680F /* FinalOutlputVC.swift */; };
+		88040E9E27A81A4000F2680F /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88040E9927A81A4000F2680F /* UILabel+Extension.swift */; };
+		88040E9F27A81A4000F2680F /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88040E9A27A81A4000F2680F /* UIButton+Extension.swift */; };
+		88040EA027A81A4000F2680F /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88040E9B27A81A4000F2680F /* UITextView+Extension.swift */; };
+		88040EA127A81A4000F2680F /* Device+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88040E9C27A81A4000F2680F /* Device+Size.swift */; };
+		88040EA227A81A4000F2680F /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88040E9D27A81A4000F2680F /* UITextField+Extension.swift */; };
 		8826E14D27A4FB670006A7E0 /* Alice-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8826E14C27A4FB670006A7E0 /* Alice-Regular.ttf */; };
 		8826E14F27A4FD330006A7E0 /* MavenPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8826E14E27A4FD330006A7E0 /* MavenPro-Regular.ttf */; };
 		8826E15127A4FDD20006A7E0 /* MavenPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8826E15027A4FDD20006A7E0 /* MavenPro-Bold.ttf */; };
@@ -1068,6 +1073,11 @@
 		86F01EA34E02D604A8F9709959934747 /* FBSDKReferralManagerLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKReferralManagerLogger.m; path = FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKReferralManagerLogger.m; sourceTree = "<group>"; };
 		88040E9327A79C7B00F2680F /* MavenPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Medium.ttf"; sourceTree = "<group>"; };
 		88040E9627A79DE100F2680F /* FinalOutlputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalOutlputVC.swift; sourceTree = "<group>"; };
+		88040E9927A81A4000F2680F /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		88040E9A27A81A4000F2680F /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		88040E9B27A81A4000F2680F /* UITextView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
+		88040E9C27A81A4000F2680F /* Device+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Device+Size.swift"; sourceTree = "<group>"; };
+		88040E9D27A81A4000F2680F /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		8826E14C27A4FB670006A7E0 /* Alice-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alice-Regular.ttf"; sourceTree = "<group>"; };
 		8826E14E27A4FD330006A7E0 /* MavenPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Regular.ttf"; sourceTree = "<group>"; };
 		8826E15027A4FDD20006A7E0 /* MavenPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Bold.ttf"; sourceTree = "<group>"; };
@@ -2247,6 +2257,18 @@
 			path = FinalOutlputVC;
 			sourceTree = "<group>";
 		};
+		88040E9827A81A4000F2680F /* HashExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				88040E9927A81A4000F2680F /* UILabel+Extension.swift */,
+				88040E9A27A81A4000F2680F /* UIButton+Extension.swift */,
+				88040E9B27A81A4000F2680F /* UITextView+Extension.swift */,
+				88040E9C27A81A4000F2680F /* Device+Size.swift */,
+				88040E9D27A81A4000F2680F /* UITextField+Extension.swift */,
+			);
+			path = HashExtensions;
+			sourceTree = "<group>";
+		};
 		8826E14B27A4FB490006A7E0 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -2454,6 +2476,7 @@
 		B5EDD5628D4CADCB40AC70511735AC28 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				88040E9827A81A4000F2680F /* HashExtensions */,
 				94395A368B750E3923414B3276F06B5E /* UIFont+Extension.swift */,
 			);
 			name = Utils;
@@ -3336,6 +3359,7 @@
 			files = (
 				93E435FFB49F90A7255D1D7B35161F25 /* AgeCell.swift in Sources */,
 				B79FF6A01280B1A002C180D69AB73144 /* ApiManager.swift in Sources */,
+				88040EA027A81A4000F2680F /* UITextView+Extension.swift in Sources */,
 				A218E9C22CE8283D99CCE0ABF36BDD04 /* Constant.swift in Sources */,
 				3873FBFBF67454BB4C4D1EE6C6DA5B59 /* CustomButton.swift in Sources */,
 				3F389377D1FD26EE447144411C6F449B /* CustomView.swift in Sources */,
@@ -3343,6 +3367,7 @@
 				CA169482F7F0BB21483A0038B04802B5 /* UIFont+Extension.swift in Sources */,
 				E96443B3B761C9CDA1EA4EACD188C004 /* HeightCell.swift in Sources */,
 				DFD6E9CB13A8CD5BBC7301E0B216ABD0 /* Localizable.strings in Sources */,
+				88040EA127A81A4000F2680F /* Device+Size.swift in Sources */,
 				D5E917C24CA004BD6114217107F919EA /* Localizable.strings in Sources */,
 				A062CCFE7DDABA7ACA0CA2AE56897B0F /* MeasurementsModel.swift in Sources */,
 				88040E9727A79DE100F2680F /* FinalOutlputVC.swift in Sources */,
@@ -3355,13 +3380,16 @@
 				7825A084F70F5A239E03187B3FC8F064 /* SelectHipsVC.swift in Sources */,
 				E9F275CE525B9F95AB0CBC9FD044C14E /* SelectStomachVC.swift in Sources */,
 				8826E15C27A55A770006A7E0 /* HipsVC.swift in Sources */,
+				88040E9F27A81A4000F2680F /* UIButton+Extension.swift in Sources */,
 				617BD9ADE5E7B23081284AF9708E7166 /* SelectWidthVC.swift in Sources */,
 				6DF3679D893BE03509C6AB79B2E7C3EC /* Sizeit.strings in Sources */,
 				02A4B51C6FB1F4DE08FC52E2A7F0CE55 /* Sizeit.strings in Sources */,
 				6F70C17C24EB8846B2E106D3F4440DC5 /* SizeIt.swift in Sources */,
 				95E71E07AB2714489861E37BE300115D /* sizeit-dummy.m in Sources */,
 				88D7776827A4309C0055974F /* BodyTypeVC.swift in Sources */,
+				88040EA227A81A4000F2680F /* UITextField+Extension.swift in Sources */,
 				DAACBED7BB6732566CD347AD04E0CB15 /* SizeitAPIEvent.swift in Sources */,
+				88040E9E27A81A4000F2680F /* UILabel+Extension.swift in Sources */,
 				C4F64AC4A5780F18EFA51B52E2AB0447 /* SizeitUtils.swift in Sources */,
 				352FFE319C92F8E38FF740CDC6E5C35C /* WidthCell.swift in Sources */,
 			);

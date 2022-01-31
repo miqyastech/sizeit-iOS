@@ -16,7 +16,7 @@ class FinalOutlputVC: UIViewController {
     //MARK:- Outlet Zone
     
     @IBOutlet weak var lblTitle:UILabel!
-    @IBOutlet var lblAddToCartTitle:[UILabel]!
+    @IBOutlet var btnAddToCartTitle:[UIButton]!
     @IBOutlet var lblOutOfStockTitle:[UILabel]!
     @IBOutlet weak var btnViewCartOutlet:UIButton!
     @IBOutlet weak var lblDescription:UILabel!
@@ -42,8 +42,8 @@ class FinalOutlputVC: UIViewController {
     func setupUI() {
         
         lblTitle.text = "Your size recommendation".localize()
-        lblAddToCartTitle.forEach { lbl in
-            lbl.text = "Add to Cart".localize().uppercased()
+        btnAddToCartTitle.forEach { btn in
+            btn.setTitle("Add to Cart".localize().uppercased(), for: .normal)
         }
         lblOutOfStockTitle.forEach { lbl in
             lbl.text = "Out of Stock!".localize().uppercased()
@@ -55,6 +55,16 @@ class FinalOutlputVC: UIViewController {
         
         imgFirst.image = imgBGMain
         imgSecond.image = imgBGMain
+        
+        if AppLanuage == SizeItLanguage.Arabic.rawValue {
+            UIView.appearance().semanticContentAttribute = .forceRightToLeft
+            btnAddToCartTitle.forEach { btn in
+                btn.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -15)
+                btn.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 5)
+            }
+            btnViewCartOutlet.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -15)
+            btnViewCartOutlet.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 5)
+        }
     }
 }
 

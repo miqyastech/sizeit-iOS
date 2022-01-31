@@ -51,6 +51,13 @@ class BodyTypeVC: UIViewController {
         btnContinueTitle.setTitle("Continue".localize(), for: .normal)
         
         imgBG.image = imgBGMain
+        
+        if AppLanuage == SizeItLanguage.Arabic.rawValue {
+            UIView.appearance().semanticContentAttribute = .forceRightToLeft
+            
+            btnContinueTitle.contentEdgeInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
+            btnContinueTitle.imageEdgeInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
+        }
     }
     
     func setupArray() {
@@ -70,7 +77,7 @@ extension BodyTypeVC {
     @IBAction func btnContinueAction(_ sender:UIButton) {
         let arr = arrBodyTypeModel.filter({$0.isSelected})
         if arr.count == 0{
-            showAlert(message: "Please select any ", vc: self)
+            showAlert(message: "Please select any body type".localize(), vc: self)
            return
         }
         let obj = mainStoryboard.instantiateViewController(withIdentifier: "HipsVC") as! HipsVC

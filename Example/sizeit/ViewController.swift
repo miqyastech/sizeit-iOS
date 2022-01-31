@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        obj.setupLanguage(isEnglish: true)
+        obj.setupLanguage(isEnglish: false)
         obj.handlerViewCart = {[weak self] in
             print("Click on view cart")
         }

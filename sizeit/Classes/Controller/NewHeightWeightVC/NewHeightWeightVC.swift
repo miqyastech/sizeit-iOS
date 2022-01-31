@@ -12,7 +12,7 @@ class NewHeightWeightVC: UIViewController {
     //MARK:- Variable Declration
     
     var topMargin:CGFloat = -7
-    var bottompMargin:CGFloat = -15
+    var bottompMargin:CGFloat = -17
     var imgBGMain = UIImage()
     var handlerViewCart:() -> Void = {}
 
@@ -71,6 +71,35 @@ class NewHeightWeightVC: UIViewController {
         viewWidth.addGestureRecognizer(tapWidth)
         
         imgBG.image = imgBGMain
+        
+        if AppLanuage == SizeItLanguage.Arabic.rawValue {
+            UIView.appearance().semanticContentAttribute = .forceRightToLeft
+            [txtWeight,txtHeight].forEach { lbl in
+                lbl?.textAlignment = .right
+            }
+            
+            btnContinueTitle.contentEdgeInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
+            btnContinueTitle.imageEdgeInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
+        }
+        
+        /*lblTitle.font = themeFont(size: 27, fontname: .aliceR)
+        lblSubTitle.font = themeFont(size: 17, fontname: .mavenR)
+        
+        [lblHeightTitle,lblWeightTitle].forEach { lbl in
+            lbl.font = themeFont(size: 12, fontname: .mavenB)
+        }
+        
+        [lblFtTitle,lblCmTitle,lblKgTitle,lblLbsSubTitle].forEach { lbl in
+            lbl.font = themeFont(size: 14, fontname: .aliceR)
+        }
+        
+        [lblMeterTitle,lblLbsTitle].forEach { lbl in
+            lbl.font = themeFont(size: 18, fontname: .aliceR)
+        }
+        
+        [txtWeight,txtHeight].forEach { lbl in
+            lbl.font = themeFont(size: 22, fontname: .aliceR)
+        }*/
         
     }
 

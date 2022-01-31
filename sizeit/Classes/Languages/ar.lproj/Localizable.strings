@@ -40,3 +40,30 @@
 "CM" = "سم";
 "LBS" = "رطل";
 "KG" = "كج";
+
+// New String
+
+"Your Weight" = "Your Weight";
+"Your Height" = "Your Height";
+"meters" = "meters";
+"Rectangle" = "Rectangle";
+"Apple" = "Apple";
+"Pear" = "Pear";
+"HourGlass" = "HourGlass";
+"Narrow" = "Narrow";
+"Medium" = "Medium";
+"Wide" = "Wide";
+"Find your personalized size recommendation!" = "Find your personalized size recommendation!";
+"Which shape best fits your" = "Which shape best fits your ";
+"body type" = "body type";
+"Which shape best describes your" = "Which shape best describes your ";
+"hips" = "hips";
+"Your size recommendation" = "Your size recommendation:";
+"Add to Cart" = "Add to Cart";
+"View Cart" = "View Cart";
+"We think this will fit best, but the below sizes might work if you like a tighter fit." = "We think this will fit best, but the below sizes might work if you like a tighter fit.";
+"Out of Stock!" = "Out of Stock!";
+"Please enter height" = "Please enter height";
+"Please enter width" = "Please enter width";
+"Please select any body type" = "Please select any body type";
+"Please select any hips" = "Please select any hips";

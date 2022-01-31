@@ -208,4 +208,6 @@ let app_theme_dark_color =  UIColor(hexString: "#8F88D8")
 let app_light_gray_color = UIColor(hexString: "#F2F2F8")
 let app_dark_gray_color = UIColor(hexString: "#5E606")
 let app_dark_blue_color = UIColor(hexString: "#867BFF")
+let app_second_black_color = UIColor(hexString: "#444444")
+
 

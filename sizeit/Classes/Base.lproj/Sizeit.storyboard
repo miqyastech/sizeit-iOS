@@ -1461,7 +1461,7 @@
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find My Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ds7-qu-arj">
                                                                                 <rect key="frame" x="59" y="20" width="142.5" height="64"/>
                                                                                 <fontDescription key="fontDescription" name="Alice-Regular" family="Alice" pointSize="25"/>
-                                                                                <nil key="textColor"/>
+                                                                                <color key="textColor" name="app_black_color"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find your personalized size recommendation!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6l-a0-EyA">
@@ -1470,7 +1470,7 @@
                                                                                     <constraint firstAttribute="width" constant="250" id="38c-Hr-TSN"/>
                                                                                 </constraints>
                                                                                 <fontDescription key="fontDescription" name="MavenPro-Regular" family="Maven Pro" pointSize="15"/>
-                                                                                <nil key="textColor"/>
+                                                                                <color key="textColor" name="app_second_black_color"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                         </subviews>
@@ -1489,7 +1489,7 @@
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WSx-t0-yl0" customClass="CustomView" customModule="sizeit" customModuleProvider="target">
                                                                                 <rect key="frame" x="20" y="30" width="220" height="60"/>
                                                                                 <subviews>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ft / " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpr-jW-G9x">
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ft / " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpr-jW-G9x">
                                                                                         <rect key="frame" x="150" y="15" width="30" height="30"/>
                                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <fontDescription key="fontDescription" name="Alice-Regular" family="Alice" pointSize="12"/>
@@ -1503,7 +1503,7 @@
                                                                                             <action selector="btnFTAction:" destination="R7U-b9-FTM" eventType="touchUpInside" id="0hx-dD-enr"/>
                                                                                         </connections>
                                                                                     </button>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWD-dc-kvs">
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWD-dc-kvs">
                                                                                         <rect key="frame" x="180" y="15" width="30" height="30"/>
                                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <fontDescription key="fontDescription" name="Alice-Regular" family="Alice" pointSize="12"/>
@@ -1595,7 +1595,7 @@
                                                                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Vl-fg-5ZW" customClass="CustomView" customModule="sizeit" customModuleProvider="target">
                                                                                 <rect key="frame" x="20" y="30" width="220" height="60"/>
                                                                                 <subviews>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kg / " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4F-oX-Rhh">
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kg / " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4F-oX-Rhh">
                                                                                         <rect key="frame" x="150" y="15" width="30" height="30"/>
                                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <fontDescription key="fontDescription" name="Alice-Regular" family="Alice" pointSize="12"/>
@@ -1628,7 +1628,7 @@
                                                                                         <color key="textColor" name="app_theme_text_color"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
-                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fY-8j-GUt">
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lbs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fY-8j-GUt">
                                                                                         <rect key="frame" x="180" y="15" width="30" height="30"/>
                                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         <fontDescription key="fontDescription" name="Alice-Regular" family="Alice" pointSize="12"/>
@@ -1701,36 +1701,26 @@
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DbF-is-UUl" customClass="CustomView" customModule="sizeit" customModuleProvider="target">
                                                                                 <rect key="frame" x="120" y="30" width="120" height="50"/>
                                                                                 <subviews>
-                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ba4-Ct-EB9">
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ba4-Ct-EB9">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
-                                                                                        <fontDescription key="fontDescription" name="Alice-Regular" family="Alice" pointSize="16"/>
-                                                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
-                                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                                        <state key="normal" title="Continue">
+                                                                                        <color key="tintColor" name="app_theme_text_color"/>
+                                                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="25" maxY="0.0"/>
+                                                                                        <inset key="imageEdgeInsets" minX="100" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                                        <state key="normal" title="Continue" image="ic_forward_arrow">
                                                                                             <color key="titleColor" name="app_black_color"/>
                                                                                         </state>
                                                                                         <connections>
                                                                                             <action selector="btnContinueAction:" destination="R7U-b9-FTM" eventType="touchUpInside" id="rDt-0E-rSM"/>
                                                                                         </connections>
                                                                                     </button>
-                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_forward_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="xJx-DV-JOH">
-                                                                                        <rect key="frame" x="93" y="19" width="12" height="12"/>
-                                                                                        <color key="tintColor" name="app_theme_text_color"/>
-                                                                                        <constraints>
-                                                                                            <constraint firstAttribute="height" constant="12" id="5t0-Pb-FgE"/>
-                                                                                            <constraint firstAttribute="width" secondItem="xJx-DV-JOH" secondAttribute="height" multiplier="1:1" id="FfC-IB-Ut8"/>
-                                                                                        </constraints>
-                                                                                    </imageView>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" name="app_theme_color"/>
                                                                                 <constraints>
-                                                                                    <constraint firstItem="xJx-DV-JOH" firstAttribute="centerY" secondItem="DbF-is-UUl" secondAttribute="centerY" id="9ta-GK-FTq"/>
                                                                                     <constraint firstItem="Ba4-Ct-EB9" firstAttribute="top" secondItem="DbF-is-UUl" secondAttribute="top" id="BZG-Nv-pPm"/>
                                                                                     <constraint firstAttribute="trailing" secondItem="Ba4-Ct-EB9" secondAttribute="trailing" id="JQ8-mJ-G00"/>
                                                                                     <constraint firstAttribute="width" constant="120" id="JYT-6E-8lj"/>
                                                                                     <constraint firstItem="Ba4-Ct-EB9" firstAttribute="leading" secondItem="DbF-is-UUl" secondAttribute="leading" id="Ncu-WO-ioW"/>
                                                                                     <constraint firstAttribute="height" constant="50" id="S7l-xU-eeu"/>
-                                                                                    <constraint firstAttribute="trailing" secondItem="xJx-DV-JOH" secondAttribute="trailing" constant="15" id="pKX-SE-jy2"/>
                                                                                     <constraint firstAttribute="bottom" secondItem="Ba4-Ct-EB9" secondAttribute="bottom" id="wvq-QP-eNO"/>
                                                                                 </constraints>
                                                                                 <userDefinedRuntimeAttributes>
@@ -1865,7 +1855,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CR6-Rl-2Fi">
-                                                        <rect key="frame" x="250" y="20" width="50" height="50"/>
+                                                        <rect key="frame" x="250" y="327" width="50" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="zLw-GW-82Z"/>
                                                             <constraint firstAttribute="width" constant="50" id="zUy-xB-ef2"/>
@@ -2020,34 +2010,24 @@
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="laP-TA-xFn" customClass="CustomView" customModule="sizeit" customModuleProvider="target">
                                                                                 <rect key="frame" x="120" y="30" width="120" height="50"/>
                                                                                 <subviews>
-                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDQ-5k-L3F">
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDQ-5k-L3F">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
-                                                                                        <fontDescription key="fontDescription" name="Alice-Regular" family="Alice" pointSize="16"/>
-                                                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
-                                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                                        <state key="normal" title="Continue">
+                                                                                        <color key="tintColor" name="app_theme_text_color"/>
+                                                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="25" maxY="0.0"/>
+                                                                                        <inset key="imageEdgeInsets" minX="100" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                                        <state key="normal" title="Continue" image="ic_forward_arrow">
                                                                                             <color key="titleColor" name="app_black_color"/>
                                                                                         </state>
                                                                                         <connections>
                                                                                             <action selector="btnContinueAction:" destination="dUP-T2-EJb" eventType="touchUpInside" id="3cB-WL-Pk2"/>
                                                                                         </connections>
                                                                                     </button>
-                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_forward_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="FVw-oy-16y">
-                                                                                        <rect key="frame" x="93" y="19" width="12" height="12"/>
-                                                                                        <color key="tintColor" name="app_theme_text_color"/>
-                                                                                        <constraints>
-                                                                                            <constraint firstAttribute="width" secondItem="FVw-oy-16y" secondAttribute="height" multiplier="1:1" id="JVh-gg-Abm"/>
-                                                                                            <constraint firstAttribute="height" constant="12" id="nao-rp-5h0"/>
-                                                                                        </constraints>
-                                                                                    </imageView>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" name="app_theme_color"/>
                                                                                 <constraints>
                                                                                     <constraint firstItem="oDQ-5k-L3F" firstAttribute="top" secondItem="laP-TA-xFn" secondAttribute="top" id="2ds-G6-ugl"/>
                                                                                     <constraint firstAttribute="bottom" secondItem="oDQ-5k-L3F" secondAttribute="bottom" id="3ZP-Vi-wqo"/>
-                                                                                    <constraint firstAttribute="trailing" secondItem="FVw-oy-16y" secondAttribute="trailing" constant="15" id="5Id-dg-31Z"/>
                                                                                     <constraint firstItem="oDQ-5k-L3F" firstAttribute="leading" secondItem="laP-TA-xFn" secondAttribute="leading" id="DSA-Sk-Vdv"/>
-                                                                                    <constraint firstItem="FVw-oy-16y" firstAttribute="centerY" secondItem="laP-TA-xFn" secondAttribute="centerY" id="HK2-hp-DS4"/>
                                                                                     <constraint firstAttribute="width" constant="120" id="Kl0-2z-Pkk"/>
                                                                                     <constraint firstAttribute="height" constant="50" id="NpL-E3-gHa"/>
                                                                                     <constraint firstAttribute="trailing" secondItem="oDQ-5k-L3F" secondAttribute="trailing" id="vR6-U0-qSl"/>
@@ -3275,7 +3255,7 @@ to begin a size recommendation</string>
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1T-AK-daB">
-                                                        <rect key="frame" x="250" y="20" width="50" height="50"/>
+                                                        <rect key="frame" x="250" y="327" width="50" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="B1b-R0-oqE"/>
                                                             <constraint firstAttribute="height" constant="50" id="cHp-8f-twa"/>
@@ -3447,35 +3427,25 @@ to begin a size recommendation</string>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l47-lR-Iyu" customClass="CustomView" customModule="sizeit" customModuleProvider="target">
                                                                                 <rect key="frame" x="120" y="30" width="120" height="50"/>
                                                                                 <subviews>
-                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgW-Os-8IM">
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgW-Os-8IM">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
-                                                                                        <fontDescription key="fontDescription" name="Alice-Regular" family="Alice" pointSize="16"/>
-                                                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
-                                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                                        <state key="normal" title="Continue">
+                                                                                        <color key="tintColor" name="app_theme_text_color"/>
+                                                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="25" maxY="0.0"/>
+                                                                                        <inset key="imageEdgeInsets" minX="100" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                                        <state key="normal" title="Continue" image="ic_forward_arrow">
                                                                                             <color key="titleColor" name="app_black_color"/>
                                                                                         </state>
                                                                                         <connections>
                                                                                             <action selector="btnContinueAction:" destination="krX-nn-fnb" eventType="touchUpInside" id="pay-cd-xft"/>
                                                                                         </connections>
                                                                                     </button>
-                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_forward_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="dcO-YO-OTw">
-                                                                                        <rect key="frame" x="93" y="19" width="12" height="12"/>
-                                                                                        <color key="tintColor" name="app_theme_text_color"/>
-                                                                                        <constraints>
-                                                                                            <constraint firstAttribute="width" secondItem="dcO-YO-OTw" secondAttribute="height" multiplier="1:1" id="FoP-ie-1NV"/>
-                                                                                            <constraint firstAttribute="height" constant="12" id="R5P-Af-lhJ"/>
-                                                                                        </constraints>
-                                                                                    </imageView>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" name="app_theme_color"/>
                                                                                 <constraints>
                                                                                     <constraint firstItem="AgW-Os-8IM" firstAttribute="leading" secondItem="l47-lR-Iyu" secondAttribute="leading" id="1Fp-oN-laK"/>
                                                                                     <constraint firstAttribute="bottom" secondItem="AgW-Os-8IM" secondAttribute="bottom" id="Ac8-hb-khk"/>
                                                                                     <constraint firstAttribute="width" constant="120" id="FOY-b2-Uut"/>
-                                                                                    <constraint firstItem="dcO-YO-OTw" firstAttribute="centerY" secondItem="l47-lR-Iyu" secondAttribute="centerY" id="Xzs-fn-PVa"/>
                                                                                     <constraint firstAttribute="trailing" secondItem="AgW-Os-8IM" secondAttribute="trailing" id="ZBM-VY-irp"/>
-                                                                                    <constraint firstAttribute="trailing" secondItem="dcO-YO-OTw" secondAttribute="trailing" constant="15" id="dnL-Xk-8MG"/>
                                                                                     <constraint firstAttribute="height" constant="50" id="jcb-HQ-7Dk"/>
                                                                                     <constraint firstItem="AgW-Os-8IM" firstAttribute="top" secondItem="l47-lR-Iyu" secondAttribute="top" id="mPl-SI-IfF"/>
                                                                                 </constraints>
@@ -3626,9 +3596,9 @@ to begin a size recommendation</string>
                                                                         <rect key="frame" x="0.0" y="0.0" width="260" height="149.5"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your size recommendation:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRz-Mf-cOh">
-                                                                                <rect key="frame" x="30.5" y="20" width="199" height="119.5"/>
+                                                                                <rect key="frame" x="25" y="20" width="210" height="119.5"/>
                                                                                 <constraints>
-                                                                                    <constraint firstAttribute="width" constant="199" id="GVU-LM-1ho"/>
+                                                                                    <constraint firstAttribute="width" constant="210" id="GVU-LM-1ho"/>
                                                                                 </constraints>
                                                                                 <fontDescription key="fontDescription" name="Alice-Regular" family="Alice" pointSize="25"/>
                                                                                 <nil key="textColor"/>
@@ -3656,50 +3626,40 @@ to begin a size recommendation</string>
                                                                                 <rect key="frame" x="20" y="48" width="220" height="214.5"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Short &amp; Medium" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TN-wB-Rc4">
-                                                                                        <rect key="frame" x="10" y="20" width="104" height="174.5"/>
+                                                                                        <rect key="frame" x="10" y="20" width="105" height="174.5"/>
                                                                                         <fontDescription key="fontDescription" name="Alice-Regular" family="Alice" pointSize="17"/>
                                                                                         <color key="textColor" name="app_black_color"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFJ-gE-wWm">
-                                                                                        <rect key="frame" x="124" y="92.5" width="86" height="30"/>
+                                                                                        <rect key="frame" x="125" y="92.5" width="85" height="30"/>
                                                                                         <subviews>
-                                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HV4-a5-hHp" customClass="CustomView" customModule="sizeit" customModuleProvider="target">
-                                                                                                <rect key="frame" x="0.0" y="0.0" width="86" height="30"/>
+                                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yR-fT-sUo" customClass="CustomView" customModule="sizeit" customModuleProvider="target">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="85" height="30"/>
                                                                                                 <subviews>
-                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD TO CART" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auq-RK-OWt">
-                                                                                                        <rect key="frame" x="10" y="10" width="53" height="9.5"/>
-                                                                                                        <fontDescription key="fontDescription" name="MavenPro-Bold" family="Maven Pro" pointSize="8"/>
-                                                                                                        <color key="textColor" name="app_theme_dark_color"/>
-                                                                                                        <nil key="highlightedColor"/>
-                                                                                                    </label>
-                                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_add" translatesAutoresizingMaskIntoConstraints="NO" id="fGi-eh-sLv">
-                                                                                                        <rect key="frame" x="71" y="10" width="10" height="10"/>
+                                                                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eh-Q6-7Cu">
+                                                                                                        <rect key="frame" x="0.0" y="0.0" width="85" height="30"/>
                                                                                                         <constraints>
-                                                                                                            <constraint firstAttribute="width" secondItem="fGi-eh-sLv" secondAttribute="height" multiplier="1:1" id="NAc-dL-LGI"/>
-                                                                                                            <constraint firstAttribute="height" constant="10" id="mmY-C3-FxK"/>
+                                                                                                            <constraint firstAttribute="width" constant="85" id="2O3-OV-yAS"/>
                                                                                                         </constraints>
-                                                                                                    </imageView>
-                                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ged-36-3uU">
-                                                                                                        <rect key="frame" x="0.0" y="0.0" width="86" height="30"/>
-                                                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                                                        <fontDescription key="fontDescription" name="MavenPro-Bold" family="Maven Pro" pointSize="8"/>
+                                                                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                                                                                        <inset key="imageEdgeInsets" minX="68" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                                                        <state key="normal" title="ADD TO CART" image="ic_add">
+                                                                                                            <color key="titleColor" name="app_theme_dark_color"/>
+                                                                                                        </state>
                                                                                                         <connections>
-                                                                                                            <action selector="btnAddToCartAction:" destination="4g0-9L-2oS" eventType="touchUpInside" id="6I5-1G-sf4"/>
+                                                                                                            <action selector="btnAddToCartAction:" destination="4g0-9L-2oS" eventType="touchUpInside" id="XHT-nw-fBd"/>
                                                                                                         </connections>
                                                                                                     </button>
                                                                                                 </subviews>
                                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                                                 <constraints>
-                                                                                                    <constraint firstAttribute="height" constant="30" id="56W-89-63i"/>
-                                                                                                    <constraint firstAttribute="bottom" secondItem="ged-36-3uU" secondAttribute="bottom" id="FoB-ep-is1"/>
-                                                                                                    <constraint firstItem="fGi-eh-sLv" firstAttribute="leading" secondItem="auq-RK-OWt" secondAttribute="trailing" constant="8" id="I9Q-9T-oGU"/>
-                                                                                                    <constraint firstAttribute="trailing" secondItem="fGi-eh-sLv" secondAttribute="trailing" constant="5" id="UJc-2q-cEp"/>
-                                                                                                    <constraint firstItem="ged-36-3uU" firstAttribute="top" secondItem="HV4-a5-hHp" secondAttribute="top" id="jY1-7r-YsS"/>
-                                                                                                    <constraint firstItem="auq-RK-OWt" firstAttribute="leading" secondItem="HV4-a5-hHp" secondAttribute="leading" constant="10" id="k7l-sv-rUL"/>
-                                                                                                    <constraint firstAttribute="trailing" secondItem="ged-36-3uU" secondAttribute="trailing" id="kQm-um-Mdr"/>
-                                                                                                    <constraint firstItem="ged-36-3uU" firstAttribute="leading" secondItem="HV4-a5-hHp" secondAttribute="leading" id="pQu-Fo-zcC"/>
-                                                                                                    <constraint firstItem="fGi-eh-sLv" firstAttribute="centerY" secondItem="HV4-a5-hHp" secondAttribute="centerY" id="pdQ-HN-79R"/>
-                                                                                                    <constraint firstItem="auq-RK-OWt" firstAttribute="centerY" secondItem="HV4-a5-hHp" secondAttribute="centerY" id="r5w-nS-qLL"/>
+                                                                                                    <constraint firstAttribute="height" constant="30" id="5n8-AZ-0O3"/>
+                                                                                                    <constraint firstAttribute="bottom" secondItem="8eh-Q6-7Cu" secondAttribute="bottom" id="Gw1-DA-30E"/>
+                                                                                                    <constraint firstItem="8eh-Q6-7Cu" firstAttribute="leading" secondItem="8yR-fT-sUo" secondAttribute="leading" id="ONA-gB-3pQ"/>
+                                                                                                    <constraint firstItem="8eh-Q6-7Cu" firstAttribute="top" secondItem="8yR-fT-sUo" secondAttribute="top" id="RFf-Bm-kC9"/>
+                                                                                                    <constraint firstAttribute="trailing" secondItem="8eh-Q6-7Cu" secondAttribute="trailing" id="uXx-Ms-eYf"/>
                                                                                                 </constraints>
                                                                                                 <userDefinedRuntimeAttributes>
                                                                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -3799,33 +3759,28 @@ to begin a size recommendation</string>
                                                                                 <rect key="frame" x="20" y="48" width="220" height="156.5"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Short &amp; Medium" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVG-d7-Ev1">
-                                                                                        <rect key="frame" x="10" y="20" width="104" height="116.5"/>
+                                                                                        <rect key="frame" x="10" y="20" width="105" height="116.5"/>
                                                                                         <fontDescription key="fontDescription" name="Alice-Regular" family="Alice" pointSize="17"/>
                                                                                         <color key="textColor" name="app_black_color"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iXg-wf-QKc">
-                                                                                        <rect key="frame" x="124" y="63.5" width="86" height="30"/>
+                                                                                        <rect key="frame" x="125" y="63.5" width="85" height="30"/>
                                                                                         <subviews>
                                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYW-C6-nXo" customClass="CustomView" customModule="sizeit" customModuleProvider="target">
-                                                                                                <rect key="frame" x="0.0" y="0.0" width="86" height="30"/>
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="85" height="30"/>
                                                                                                 <subviews>
-                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD TO CART" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dao-Q5-PJk">
-                                                                                                        <rect key="frame" x="10" y="10" width="53" height="9.5"/>
-                                                                                                        <fontDescription key="fontDescription" name="MavenPro-Bold" family="Maven Pro" pointSize="8"/>
-                                                                                                        <color key="textColor" name="app_theme_dark_color"/>
-                                                                                                        <nil key="highlightedColor"/>
-                                                                                                    </label>
-                                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_add" translatesAutoresizingMaskIntoConstraints="NO" id="Ycd-bG-hbR">
-                                                                                                        <rect key="frame" x="71" y="10" width="10" height="10"/>
+                                                                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-S3-Qjn">
+                                                                                                        <rect key="frame" x="0.0" y="0.0" width="85" height="30"/>
                                                                                                         <constraints>
-                                                                                                            <constraint firstAttribute="height" constant="10" id="Yfw-2l-waC"/>
-                                                                                                            <constraint firstAttribute="width" secondItem="Ycd-bG-hbR" secondAttribute="height" multiplier="1:1" id="lZg-na-uQ7"/>
+                                                                                                            <constraint firstAttribute="width" constant="85" id="Duh-vq-TzG"/>
                                                                                                         </constraints>
-                                                                                                    </imageView>
-                                                                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-S3-Qjn">
-                                                                                                        <rect key="frame" x="0.0" y="0.0" width="86" height="30"/>
-                                                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                                                        <fontDescription key="fontDescription" name="MavenPro-Bold" family="Maven Pro" pointSize="8"/>
+                                                                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                                                                                        <inset key="imageEdgeInsets" minX="68" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                                                        <state key="normal" title="ADD TO CART" image="ic_add">
+                                                                                                            <color key="titleColor" name="app_theme_dark_color"/>
+                                                                                                        </state>
                                                                                                         <connections>
                                                                                                             <action selector="btnAddToCartAction:" destination="4g0-9L-2oS" eventType="touchUpInside" id="SJG-RZ-XGv"/>
                                                                                                         </connections>
@@ -3833,13 +3788,8 @@ to begin a size recommendation</string>
                                                                                                 </subviews>
                                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                                                 <constraints>
-                                                                                                    <constraint firstItem="dao-Q5-PJk" firstAttribute="centerY" secondItem="xYW-C6-nXo" secondAttribute="centerY" id="5eq-XQ-HbY"/>
-                                                                                                    <constraint firstItem="Ycd-bG-hbR" firstAttribute="centerY" secondItem="xYW-C6-nXo" secondAttribute="centerY" id="87I-4m-9Yk"/>
-                                                                                                    <constraint firstItem="Ycd-bG-hbR" firstAttribute="leading" secondItem="dao-Q5-PJk" secondAttribute="trailing" constant="8" id="Hf4-YC-DHE"/>
                                                                                                     <constraint firstAttribute="bottom" secondItem="Ggg-S3-Qjn" secondAttribute="bottom" id="V4F-T9-Ysk"/>
                                                                                                     <constraint firstAttribute="height" constant="30" id="aBG-XW-8PT"/>
-                                                                                                    <constraint firstAttribute="trailing" secondItem="Ycd-bG-hbR" secondAttribute="trailing" constant="5" id="aWP-EE-OO1"/>
-                                                                                                    <constraint firstItem="dao-Q5-PJk" firstAttribute="leading" secondItem="xYW-C6-nXo" secondAttribute="leading" constant="10" id="dGb-gV-dSu"/>
                                                                                                     <constraint firstItem="Ggg-S3-Qjn" firstAttribute="leading" secondItem="xYW-C6-nXo" secondAttribute="leading" id="gSb-yj-MmV"/>
                                                                                                     <constraint firstItem="Ggg-S3-Qjn" firstAttribute="top" secondItem="xYW-C6-nXo" secondAttribute="top" id="gok-3C-LrZ"/>
                                                                                                     <constraint firstAttribute="trailing" secondItem="Ggg-S3-Qjn" secondAttribute="trailing" id="mGs-n6-YOO"/>
@@ -3923,36 +3873,26 @@ to begin a size recommendation</string>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEt-oU-P4B" customClass="CustomView" customModule="sizeit" customModuleProvider="target">
                                                                                 <rect key="frame" x="120" y="41" width="120" height="50"/>
                                                                                 <subviews>
-                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgd-Uq-wCN">
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgd-Uq-wCN">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
-                                                                                        <fontDescription key="fontDescription" name="Alice-Regular" family="Alice" pointSize="16"/>
-                                                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
-                                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                                        <state key="normal" title="View Cart">
+                                                                                        <color key="tintColor" name="app_theme_text_color"/>
+                                                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="25" maxY="0.0"/>
+                                                                                        <inset key="imageEdgeInsets" minX="100" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                                        <state key="normal" title="View Cart" image="ic_forward_arrow">
                                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                         </state>
                                                                                         <connections>
                                                                                             <action selector="btnViewCartAction:" destination="4g0-9L-2oS" eventType="touchUpInside" id="0OI-ps-7py"/>
                                                                                         </connections>
                                                                                     </button>
-                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_forward_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="9iq-z7-cyY">
-                                                                                        <rect key="frame" x="93" y="19" width="12" height="12"/>
-                                                                                        <color key="tintColor" name="app_theme_text_color"/>
-                                                                                        <constraints>
-                                                                                            <constraint firstAttribute="width" secondItem="9iq-z7-cyY" secondAttribute="height" multiplier="1:1" id="E1I-wV-oFl"/>
-                                                                                            <constraint firstAttribute="height" constant="12" id="f6G-lU-ZYx"/>
-                                                                                        </constraints>
-                                                                                    </imageView>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" name="app_black_color"/>
                                                                                 <constraints>
-                                                                                    <constraint firstAttribute="trailing" secondItem="9iq-z7-cyY" secondAttribute="trailing" constant="15" id="Cli-Zf-5uJ"/>
                                                                                     <constraint firstItem="Tgd-Uq-wCN" firstAttribute="top" secondItem="GEt-oU-P4B" secondAttribute="top" id="aNe-W3-oUN"/>
                                                                                     <constraint firstAttribute="bottom" secondItem="Tgd-Uq-wCN" secondAttribute="bottom" id="bFi-NU-vK1"/>
                                                                                     <constraint firstAttribute="trailing" secondItem="Tgd-Uq-wCN" secondAttribute="trailing" id="hAP-jG-fi6"/>
                                                                                     <constraint firstAttribute="height" constant="50" id="hcD-1c-8Qy"/>
                                                                                     <constraint firstAttribute="width" constant="120" id="pGK-UR-zHG"/>
-                                                                                    <constraint firstItem="9iq-z7-cyY" firstAttribute="centerY" secondItem="GEt-oU-P4B" secondAttribute="centerY" id="zMD-Ph-Quk"/>
                                                                                     <constraint firstItem="Tgd-Uq-wCN" firstAttribute="leading" secondItem="GEt-oU-P4B" secondAttribute="leading" id="zdZ-L9-su6"/>
                                                                                 </constraints>
                                                                                 <userDefinedRuntimeAttributes>
@@ -4010,7 +3950,7 @@ to begin a size recommendation</string>
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwB-UZ-L5b">
-                                                        <rect key="frame" x="250" y="640" width="50" height="50"/>
+                                                        <rect key="frame" x="250" y="20" width="50" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="NAl-mY-T6k"/>
                                                             <constraint firstAttribute="height" constant="50" id="pGz-eo-dNv"/>
@@ -4075,14 +4015,14 @@ to begin a size recommendation</string>
                         <outlet property="lblOutputOne" destination="0TN-wB-Rc4" id="wgV-Tj-lQS"/>
                         <outlet property="lblOutputSecond" destination="AVG-d7-Ev1" id="Ebq-C2-xe1"/>
                         <outlet property="lblTitle" destination="PRz-Mf-cOh" id="3Ca-tC-3fn"/>
-                        <outlet property="vwFirstAddCart" destination="HV4-a5-hHp" id="EJy-CA-Hcv"/>
+                        <outlet property="vwFirstAddCart" destination="8yR-fT-sUo" id="swA-2N-OAt"/>
                         <outlet property="vwFirstOutOfStock" destination="8ev-20-xCj" id="Mxs-fU-loA"/>
                         <outlet property="vwSecondAddCart" destination="xYW-C6-nXo" id="ZnO-Tt-EqJ"/>
                         <outlet property="vwSecondOutOfStock" destination="LX5-Av-1ep" id="Op9-I9-6W0"/>
                         <outletCollection property="lblOutOfStockTitle" destination="XrC-IS-XXW" collectionClass="NSMutableArray" id="lus-HJ-zGN"/>
-                        <outletCollection property="lblAddToCartTitle" destination="auq-RK-OWt" collectionClass="NSMutableArray" id="VYP-W9-pcs"/>
-                        <outletCollection property="lblAddToCartTitle" destination="dao-Q5-PJk" collectionClass="NSMutableArray" id="mSq-sq-WN3"/>
                         <outletCollection property="lblOutOfStockTitle" destination="nRP-Xa-3T8" collectionClass="NSMutableArray" id="Hem-bX-6qc"/>
+                        <outletCollection property="btnAddToCartTitle" destination="8eh-Q6-7Cu" collectionClass="NSMutableArray" id="TUT-N9-CD4"/>
+                        <outletCollection property="btnAddToCartTitle" destination="Ggg-S3-Qjn" collectionClass="NSMutableArray" id="0WX-DI-ohd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N0a-Rt-abq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -4165,6 +4105,9 @@ to begin a size recommendation</string>
         </namedColor>
         <namedColor name="app_light_gray_color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="app_second_black_color">
+            <color red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="app_theme_color">
             <color red="0.94117647058823528" green="0.94117647058823528" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
