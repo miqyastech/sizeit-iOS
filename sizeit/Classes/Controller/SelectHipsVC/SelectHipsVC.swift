@@ -136,7 +136,7 @@ class SelectHipsVC: UIViewController {
     }
     
     //Close screen
-    @IBAction func btnCloseAction(_ sender:UIButton) {
+    @IBAction override func btnCloseAction(_ sender:UIButton) {
         self.dismissVC()
     }
     

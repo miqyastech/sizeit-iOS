@@ -334,6 +334,14 @@
 		8745C673136925D8A8BBD4E60EC5AD7E /* FBSDKLoginManager+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB61BEAA47BF327C54F41BE76E7B5F9 /* FBSDKLoginManager+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		87775035822C453C58DB68A711491AF0 /* PrivacyPolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C0A3C01AB3B94BE8E4039FF2F1BFB7 /* PrivacyPolicyVC.swift */; };
 		8801277CB3D31327C54D07B7E68B99E1 /* FBSDKCoreKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 962F3E989B62AEC4F3FEC5F36207EB38 /* FBSDKCoreKit-dummy.m */; };
+		88040E9427A79C7B00F2680F /* MavenPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88040E9327A79C7B00F2680F /* MavenPro-Medium.ttf */; };
+		88040E9727A79DE100F2680F /* FinalOutlputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88040E9627A79DE100F2680F /* FinalOutlputVC.swift */; };
+		8826E14D27A4FB670006A7E0 /* Alice-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8826E14C27A4FB670006A7E0 /* Alice-Regular.ttf */; };
+		8826E14F27A4FD330006A7E0 /* MavenPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8826E14E27A4FD330006A7E0 /* MavenPro-Regular.ttf */; };
+		8826E15127A4FDD20006A7E0 /* MavenPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8826E15027A4FDD20006A7E0 /* MavenPro-Bold.ttf */; };
+		8826E15727A5314B0006A7E0 /* BodyTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826E15627A5314B0006A7E0 /* BodyTypeCell.swift */; };
+		8826E15927A5323B0006A7E0 /* BodyTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826E15827A5323A0006A7E0 /* BodyTypeModel.swift */; };
+		8826E15C27A55A770006A7E0 /* HipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826E15B27A55A770006A7E0 /* HipsVC.swift */; };
 		88606CEBA5DBF02F4FBD11526C92729F /* FBSDKGraphRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1CEF6FD5A8002210DE525C9EE31B45 /* FBSDKGraphRequestFactory.m */; };
 		88D7776827A4309C0055974F /* BodyTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7776627A430980055974F /* BodyTypeVC.swift */; };
 		88E6003C78BA615142AC8D188930CC39 /* FBSDKCrashHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BEC77EB67F0CDAB4641614B3D9870EF /* FBSDKCrashHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -461,7 +469,7 @@
 		C90EF19C7A8920181F85FA06D38C5175 /* FBSDKCoreKit_Basics.h in Headers */ = {isa = PBXBuildFile; fileRef = 754BAAE50EA40F45B3ACC0DBF6B973CD /* FBSDKCoreKit_Basics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9BE1CE420F55DC058890E63C1529F23 /* FBSDKAppLinkNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = DE99DD29617447557645F75512BB6212 /* FBSDKAppLinkNavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9DFCEB90E6332F06FD834E126DA9181 /* FBSDKLoginUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = A5971E60F9D3971DCBF552E429866AAB /* FBSDKLoginUtility.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CA169482F7F0BB21483A0038B04802B5 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94395A368B750E3923414B3276F06B5E /* File.swift */; };
+		CA169482F7F0BB21483A0038B04802B5 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94395A368B750E3923414B3276F06B5E /* UIFont+Extension.swift */; };
 		CCC392636A7558D0C8E28EB932197B37 /* FBSDKURLSessionProxyFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 10D71DEEF18AA38D97018683CB301FE0 /* FBSDKURLSessionProxyFactory.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		CD21551CE7308C084DD3F8F93D2500F1 /* FBSDKNotificationProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D11CF7BF432B6218FA88D49ED6A1AE /* FBSDKNotificationProtocols.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		CD5836C923B3D79623229A224989892B /* FBSDKError.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB5BABFFC2316DE4A66F6735F7EFB7A /* FBSDKError.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -1029,7 +1037,7 @@
 		77E951D2E5631FF554A04A86B99BFDC4 /* FBSDKKeychainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKKeychainStore.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKKeychainStore.h; sourceTree = "<group>"; };
 		783046359F91A34DCB45C52CF3F88D36 /* FBSDKGraphRequestConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKGraphRequestConnection.m; path = FBSDKCoreKit/FBSDKCoreKit/GraphAPI/FBSDKGraphRequestConnection.m; sourceTree = "<group>"; };
 		788E340CDCDB1F8BDDEF96C32F02D1A8 /* FBSDKAppLinkResolving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppLinkResolving.h; path = FBSDKCoreKit/FBSDKCoreKit/AppLink/Resolver/FBSDKAppLinkResolving.h; sourceTree = "<group>"; };
-		79B50463361AEE23940B61ED3D00002F /* sizeit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = sizeit; path = sizeit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79B50463361AEE23940B61ED3D00002F /* sizeit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = sizeit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BEF83FD5EA5934B8590630B66C420D /* FBSDKBridgeAPIResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKBridgeAPIResponse.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIResponse.h; sourceTree = "<group>"; };
 		7A464B0F4B7CBF47F88A4559E99E8E29 /* FBSDKAppLinkReturnToRefererView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppLinkReturnToRefererView.m; path = FBSDKCoreKit/FBSDKCoreKit/AppLink/FBSDKAppLinkReturnToRefererView.m; sourceTree = "<group>"; };
 		7B5958B6C0BC2BD3BC81AC593D9714E8 /* FBSDKBasicUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKBasicUtility.m; path = Sources/FBSDKCoreKit_Basics/FBSDKBasicUtility.m; sourceTree = "<group>"; };
@@ -1058,6 +1066,14 @@
 		8568504A490A7C26A0B4CA72782EC964 /* FBSDKAppEventsConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppEventsConfiguration.h; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/FBSDKAppEventsConfiguration.h; sourceTree = "<group>"; };
 		860589F055F2158CD43576AB5B033E25 /* SizeIt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SizeIt.swift; sourceTree = "<group>"; };
 		86F01EA34E02D604A8F9709959934747 /* FBSDKReferralManagerLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKReferralManagerLogger.m; path = FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKReferralManagerLogger.m; sourceTree = "<group>"; };
+		88040E9327A79C7B00F2680F /* MavenPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Medium.ttf"; sourceTree = "<group>"; };
+		88040E9627A79DE100F2680F /* FinalOutlputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalOutlputVC.swift; sourceTree = "<group>"; };
+		8826E14C27A4FB670006A7E0 /* Alice-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alice-Regular.ttf"; sourceTree = "<group>"; };
+		8826E14E27A4FD330006A7E0 /* MavenPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Regular.ttf"; sourceTree = "<group>"; };
+		8826E15027A4FDD20006A7E0 /* MavenPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Bold.ttf"; sourceTree = "<group>"; };
+		8826E15627A5314B0006A7E0 /* BodyTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTypeCell.swift; sourceTree = "<group>"; };
+		8826E15827A5323A0006A7E0 /* BodyTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTypeModel.swift; sourceTree = "<group>"; };
+		8826E15B27A55A770006A7E0 /* HipsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HipsVC.swift; sourceTree = "<group>"; };
 		884FA7AB471C66D6644AC38967B21F88 /* SelectHeightVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SelectHeightVC.swift; sourceTree = "<group>"; };
 		88A1271162B17A5D7DD3AF52802798A6 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
 		88ADB144F24A00B1CD3B7811368CB57E /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
@@ -1085,7 +1101,7 @@
 		92FF30C4C22F5D4EF738231824DD2E10 /* FBSDKBridgeAPIProtocolWebV1.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKBridgeAPIProtocolWebV1.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/ProtocolVersions/FBSDKBridgeAPIProtocolWebV1.m; sourceTree = "<group>"; };
 		9333E4C43954ADCA5CCBEA66A1E563DC /* FBSDKDataPersisting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKDataPersisting.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKDataPersisting.h; sourceTree = "<group>"; };
 		939A249FAD29E8C182C21DFBF58A7B7A /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		94395A368B750E3923414B3276F06B5E /* File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		94395A368B750E3923414B3276F06B5E /* UIFont+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		9439877580CB7BC700F3E6F4AFDCF9B2 /* FBSDKReferralManagerResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKReferralManagerResult.m; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKReferralManagerResult.m; sourceTree = "<group>"; };
 		947345AD647B77F042C63E791B97BB14 /* FBSDKErrorConfigurationProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKErrorConfigurationProtocol.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKErrorConfigurationProtocol.h; sourceTree = "<group>"; };
 		94D13505DFBAC9207F1DB5A9716390ED /* FBSDKIntegrityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKIntegrityManager.m; path = FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/Integrity/FBSDKIntegrityManager.m; sourceTree = "<group>"; };
@@ -1526,6 +1542,7 @@
 		10577DA33F2A59D9FD579DCE08697F9B /* sizeit */ = {
 			isa = PBXGroup;
 			children = (
+				8826E14B27A4FB490006A7E0 /* Font */,
 				F8A0FDFDCDD53FACCC9B7BBAB8457F8D /* Sizeit.storyboard */,
 				B7702A1874194783A525E9DAC5BA574F /* Api Manager */,
 				BB9738E734990CAA0200C216A11958EB /* Assets */,
@@ -1666,6 +1683,8 @@
 		4B85C2B5453D73543016018447A02CD8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				88040E9527A79DB600F2680F /* FinalOutlputVC */,
+				8826E15A27A559B30006A7E0 /* HipsVc */,
 				88D7776527A4303A0055974F /* BodyTypeVC */,
 				818666706BC04CA32C7F303066F853CB /* FindMySize */,
 				C43827D6CCD6CAAD67CB115219E3CED7 /* NewHeightWeightVC */,
@@ -2220,10 +2239,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		88040E9527A79DB600F2680F /* FinalOutlputVC */ = {
+			isa = PBXGroup;
+			children = (
+				88040E9627A79DE100F2680F /* FinalOutlputVC.swift */,
+			);
+			path = FinalOutlputVC;
+			sourceTree = "<group>";
+		};
+		8826E14B27A4FB490006A7E0 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				88040E9327A79C7B00F2680F /* MavenPro-Medium.ttf */,
+				8826E14E27A4FD330006A7E0 /* MavenPro-Regular.ttf */,
+				8826E15027A4FDD20006A7E0 /* MavenPro-Bold.ttf */,
+				8826E14C27A4FB670006A7E0 /* Alice-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		8826E15A27A559B30006A7E0 /* HipsVc */ = {
+			isa = PBXGroup;
+			children = (
+				8826E15B27A55A770006A7E0 /* HipsVC.swift */,
+			);
+			path = HipsVc;
+			sourceTree = "<group>";
+		};
 		88D7776527A4303A0055974F /* BodyTypeVC */ = {
 			isa = PBXGroup;
 			children = (
 				88D7776627A430980055974F /* BodyTypeVC.swift */,
+				8826E15627A5314B0006A7E0 /* BodyTypeCell.swift */,
+				8826E15827A5323A0006A7E0 /* BodyTypeModel.swift */,
 			);
 			path = BodyTypeVC;
 			sourceTree = "<group>";
@@ -2397,7 +2445,7 @@
 				EEB5E51274B74EC70A8825D8595CD0FC /* Pods-sizeit_Example */,
 				138B2A29240F06E3426696FAE064E646 /* Pods-sizeit_Tests */,
 				21B03CA622E690725A6626C088E1D09F /* ReachabilitySwift */,
-				79B50463361AEE23940B61ED3D00002F /* sizeit */,
+				79B50463361AEE23940B61ED3D00002F /* sizeit.framework */,
 				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */,
 			);
 			name = Products;
@@ -2406,7 +2454,7 @@
 		B5EDD5628D4CADCB40AC70511735AC28 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				94395A368B750E3923414B3276F06B5E /* File.swift */,
+				94395A368B750E3923414B3276F06B5E /* UIFont+Extension.swift */,
 			);
 			name = Utils;
 			path = sizeit/Classes/Utils;
@@ -2987,7 +3035,7 @@
 			);
 			name = sizeit;
 			productName = sizeit;
-			productReference = 79B50463361AEE23940B61ED3D00002F /* sizeit */;
+			productReference = 79B50463361AEE23940B61ED3D00002F /* sizeit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */ = {
@@ -3225,7 +3273,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B5364C1C423BBF9552FDAAE7B126464 /* Assets.xcassets in Resources */,
+				8826E14F27A4FD330006A7E0 /* MavenPro-Regular.ttf in Resources */,
+				88040E9427A79C7B00F2680F /* MavenPro-Medium.ttf in Resources */,
 				56B4F680A60CED19B5FA4194B5834149 /* Sizeit.storyboard in Resources */,
+				8826E15127A4FDD20006A7E0 /* MavenPro-Bold.ttf in Resources */,
+				8826E14D27A4FB670006A7E0 /* Alice-Regular.ttf in Resources */,
 				7E01D349E569BAA79E8DD21AB3934783 /* WidthCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3287,18 +3339,22 @@
 				A218E9C22CE8283D99CCE0ABF36BDD04 /* Constant.swift in Sources */,
 				3873FBFBF67454BB4C4D1EE6C6DA5B59 /* CustomButton.swift in Sources */,
 				3F389377D1FD26EE447144411C6F449B /* CustomView.swift in Sources */,
-				CA169482F7F0BB21483A0038B04802B5 /* File.swift in Sources */,
+				8826E15727A5314B0006A7E0 /* BodyTypeCell.swift in Sources */,
+				CA169482F7F0BB21483A0038B04802B5 /* UIFont+Extension.swift in Sources */,
 				E96443B3B761C9CDA1EA4EACD188C004 /* HeightCell.swift in Sources */,
 				DFD6E9CB13A8CD5BBC7301E0B216ABD0 /* Localizable.strings in Sources */,
 				D5E917C24CA004BD6114217107F919EA /* Localizable.strings in Sources */,
 				A062CCFE7DDABA7ACA0CA2AE56897B0F /* MeasurementsModel.swift in Sources */,
+				88040E9727A79DE100F2680F /* FinalOutlputVC.swift in Sources */,
 				9941AB6022FA6A7C0863C83BA44A7D9C /* NewHeightWeightVC.swift in Sources */,
 				87775035822C453C58DB68A711491AF0 /* PrivacyPolicyVC.swift in Sources */,
 				B0935B28985B6D7EED6890EE9396693E /* ReachabilityTest.swift in Sources */,
 				05AABC8F9D5700F86E9FD0AEBC2C0BD9 /* SelectAgeVC.swift in Sources */,
+				8826E15927A5323B0006A7E0 /* BodyTypeModel.swift in Sources */,
 				E69F0D7A3CABD5364BD631B83E874D80 /* SelectHeightVC.swift in Sources */,
 				7825A084F70F5A239E03187B3FC8F064 /* SelectHipsVC.swift in Sources */,
 				E9F275CE525B9F95AB0CBC9FD044C14E /* SelectStomachVC.swift in Sources */,
+				8826E15C27A55A770006A7E0 /* HipsVC.swift in Sources */,
 				617BD9ADE5E7B23081284AF9708E7166 /* SelectWidthVC.swift in Sources */,
 				6DF3679D893BE03509C6AB79B2E7C3EC /* Sizeit.strings in Sources */,
 				02A4B51C6FB1F4DE08FC52E2A7F0CE55 /* Sizeit.strings in Sources */,
@@ -3814,7 +3870,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/sizeit/sizeit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/sizeit/sizeit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/sizeit/sizeit.modulemap";
 				PRODUCT_MODULE_NAME = sizeit;
@@ -4002,7 +4058,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/sizeit/sizeit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/sizeit/sizeit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/sizeit/sizeit.modulemap";
 				PRODUCT_MODULE_NAME = sizeit;

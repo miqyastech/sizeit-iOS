@@ -12,7 +12,9 @@ class NewHeightWeightVC: UIViewController {
     //MARK:- Variable Declration
     
     var topMargin:CGFloat = -7
-    var bottompMargin:CGFloat = -23
+    var bottompMargin:CGFloat = -15
+    var imgBGMain = UIImage()
+    var handlerViewCart:() -> Void = {}
 
     //MARK:- Outlte zone
     
@@ -24,21 +26,51 @@ class NewHeightWeightVC: UIViewController {
     @IBOutlet weak var txtWeight:UITextField!
     @IBOutlet weak var viewHeight:CustomView!
     @IBOutlet weak var viewWidth:CustomView!
+    @IBOutlet weak var lblTitle:UILabel!
+    @IBOutlet weak var lblSubTitle:UILabel!
+    @IBOutlet weak var lblMeterTitle:UILabel!
+    @IBOutlet weak var lblLbsTitle:UILabel!
+    @IBOutlet weak var btnContinueTitle:UIButton!
+    @IBOutlet weak var lblFtTitle:UILabel!
+    @IBOutlet weak var lblKgTitle:UILabel!
+    @IBOutlet weak var lblCmTitle:UILabel!
+    @IBOutlet weak var lblLbsSubTitle:UILabel!
+    @IBOutlet weak var imgBG:UIImageView!
     
     //MARK:- ViewLifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        NotificationCenter.default.addObserver(self, selector: #selector(isClickOnViewCart), name: Notification.Name(rawValue: view_cart_notification_key), object: nil)
     }
     
     func setupUI() {
+        
+        [txtHeight,txtWeight].forEach { txtField in
+            _ = textFieldShouldEndEditing(txtField!)
+            txtField?.tintColor = app_black_color
+        }
+      
+        lblTitle.text = "FIND MY SIZE".localize().capitalized
+        lblSubTitle.text = "Find your personalized size recommendation!".localize()
+        lblHeightTitle.text = " \("Your Height".localize().uppercased()) "
+        lblWeightTitle.text = " \("Your Weight".localize().uppercased()) "
+        lblMeterTitle.text = "ft".localize()
+        lblFtTitle.text = "\("ft".localize()) /"
+        lblCmTitle.text = "cm".localize()
+        lblLbsTitle.text = "kg".localize().lowercased()
+        lblLbsSubTitle.text = "lbs".localize().lowercased()
+        lblKgTitle.text = "\("kg".localize()) /"
+        btnContinueTitle.setTitle("Continue".localize(), for: .normal)
         
         let tapHeight = UITapGestureRecognizer(target: self, action: #selector(viewOnTap(_:)))
         viewHeight.addGestureRecognizer(tapHeight)
         
         let tapWidth = UITapGestureRecognizer(target: self, action: #selector(viewOnTap(_:)))
         viewWidth.addGestureRecognizer(tapWidth)
+        
+        imgBG.image = imgBGMain
         
     }
 
@@ -52,6 +84,10 @@ class NewHeightWeightVC: UIViewController {
            _ =  textFieldShouldBeginEditing(txtWeight)
         }
     }
+    
+    @objc func isClickOnViewCart() {
+        handlerViewCart()
+    }
 }
 
 //MARK:- Action Zone
@@ -59,9 +95,70 @@ class NewHeightWeightVC: UIViewController {
 extension NewHeightWeightVC {
     
     @IBAction func btnContinueAction(_ sender:UIButton) {
-        let obj = mainStoryboard.instantiateViewController(withIdentifier: "BodyTypeVC") as! BodyTypeVC
-        self.navigationController?.pushViewController(obj, animated: true)
+        if self.txtHeight.text?.isEmpty ?? true {
+            showAlert(message: "Please enter height".localize(), vc: self)
+        } else if self.txtWeight.text?.isEmpty ?? true {
+            showAlert(message: "Please enter width".localize(), vc: self)
+        } else {
+            let obj = mainStoryboard.instantiateViewController(withIdentifier: "BodyTypeVC") as! BodyTypeVC
+            obj.imgBGMain = imgBGMain
+            self.navigationController?.pushViewController(obj, animated: true)
+        }
+        
     }
+    
+    @IBAction func btnFTAction(_ sender:UIButton) {
+        [lblFtTitle,lblKgTitle].forEach { lbl in
+            lbl?.textColor = app_theme_text_color
+        }
+        
+        [lblCmTitle,lblLbsSubTitle].forEach { lbl in
+            lbl?.textColor = app_theme_second_text_color
+        }
+        
+        lblMeterTitle.text = "ft".localize()
+        lblLbsTitle.text = "kg".localize()
+    }
+    
+    @IBAction func btnCMAction(_ sender:UIButton) {
+        [lblFtTitle,lblKgTitle].forEach { lbl in
+            lbl?.textColor = app_theme_second_text_color
+        }
+        
+        [lblCmTitle,lblLbsSubTitle].forEach { lbl in
+            lbl?.textColor = app_theme_text_color
+        }
+        
+        lblMeterTitle.text = "cm".localize()
+        lblLbsTitle.text = "lbs".localize()
+    }
+    
+    @IBAction func btnKGAction(_ sender:UIButton) {
+        [lblFtTitle,lblKgTitle].forEach { lbl in
+            lbl?.textColor = app_theme_text_color
+        }
+        
+        [lblCmTitle,lblLbsSubTitle].forEach { lbl in
+            lbl?.textColor = app_theme_second_text_color
+        }
+        
+        lblMeterTitle.text = "ft".localize()
+        lblLbsTitle.text = "kg".localize()
+    }
+    
+    @IBAction func btnLBSAction(_ sender:UIButton) {
+        [lblFtTitle,lblKgTitle].forEach { lbl in
+            lbl?.textColor = app_theme_second_text_color
+        }
+        
+        [lblCmTitle,lblLbsSubTitle].forEach { lbl in
+            lbl?.textColor = app_theme_text_color
+        }
+        
+        lblMeterTitle.text = "cm".localize()
+        lblLbsTitle.text = "lbs".localize()
+    }
+    
 }
 
 //MARK:- UITextfield Delegate
@@ -72,9 +169,13 @@ extension NewHeightWeightVC:UITextFieldDelegate {
         if textField == txtHeight {
             lblHeightTop.constant = bottompMargin
             lblWeightTop.constant = topMargin
+            lblHeightTitle.textColor = app_black_color
+            lblWeightTitle.textColor = app_theme_text_color
         } else if textField == txtWeight {
             lblHeightTop.constant = topMargin
             lblWeightTop.constant = bottompMargin
+            lblWeightTitle.textColor = app_black_color
+            lblHeightTitle.textColor = app_theme_text_color
         }
         UIView.animate(withDuration: 1) {
             self.view.layoutIfNeeded()
@@ -85,8 +186,10 @@ extension NewHeightWeightVC:UITextFieldDelegate {
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         if textField == txtHeight {
             lblHeightTop.constant = topMargin
+            lblHeightTitle.textColor = app_theme_text_color
         } else if textField == txtWeight {
             lblWeightTop.constant = topMargin
+            lblWeightTitle.textColor = app_theme_text_color
         }
         UIView.animate(withDuration: 1) {
             self.view.layoutIfNeeded()

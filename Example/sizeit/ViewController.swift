@@ -22,7 +22,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         obj.setupLanguage(isEnglish: true)
-        
+        obj.handlerViewCart = {[weak self] in
+            print("Click on view cart")
+        }
         //MARK:- Facebook Event
         /*let isSizeAvailable = obj.isAttributeSizeAvailable(attributeName: "Skirts-S,M,L,XL,XXL")
         SizeitUtils().initUsers(userID: "1234", hashSize: isSizeAvailable, data: "test")
@@ -103,6 +105,7 @@ class ViewController: UIViewController {
         let strCurrentSize = obj.getSizeByAttribute(attributeName: "Outer Wear-FREE")
         if strCurrentSize.isEmpty {
 //            obj.openSizePopup(userId: "1", attributeName: "Outer Wear-FREE",controller: self, key: "8MYHPT4-6364FZJ-Q2SW96P-GEBF9QP")
+            obj.bgImage = UIImage(named: "img_sample") ?? UIImage()
             obj.openNewSizePopup(userId: "1", attributeName: "Outer Wear-FREE",controller: self, key: "8MYHPT4-6364FZJ-Q2SW96P-GEBF9QP")
             obj.handlerUpdate = {[weak self] size in
                 self?.btnMySize.setTitle("Your size is \(size)", for: .normal)

@@ -47,6 +47,10 @@ public class SizeIt:UIViewController,SizeitTrackingDelegate {
         return json["data"]["size"].arrayValue
     }
     
+    public var handlerViewCart:() -> Void = {}
+    
+    public var bgImage = UIImage()
+    
     //USE : This function open size picker
     public func openSizePopup(userId:String,attributeName:String,controller:UIViewController,key:String) {
         apiKey = key
@@ -61,9 +65,14 @@ public class SizeIt:UIViewController,SizeitTrackingDelegate {
     }
     
     public func openNewSizePopup(userId:String,attributeName:String,controller:UIViewController,key:String) {
+        registerAllFont()
         apiKey = key
         kUserId = userId
         let obj = mainStoryboard.instantiateViewController(withIdentifier: "NewHeightWeightVC") as! NewHeightWeightVC
+        obj.imgBGMain = bgImage
+        obj.handlerViewCart = { [weak self ]in
+            self?.handlerViewCart()
+        }
 //        obj.delegate = self
 //        obj.categoryName = attributeName
         let nav = UINavigationController(rootViewController: obj)
@@ -96,5 +105,14 @@ public class SizeIt:UIViewController,SizeitTrackingDelegate {
         }
         return false
     }
+    
+    func registerAllFont() {
+        _ =  UIFont.registerFont(bundle: bundleName!, fontName: themeFonts.mavenB.rawValue, fontExtension: "ttf")
+        _ =  UIFont.registerFont(bundle: bundleName!, fontName: themeFonts.mavenR.rawValue, fontExtension: "ttf")
+        _ =  UIFont.registerFont(bundle: bundleName!, fontName: themeFonts.aliceR.rawValue, fontExtension: "ttf")
+        _ =  UIFont.registerFont(bundle: bundleName!, fontName: themeFonts.mavenM.rawValue, fontExtension: "ttf")
+    }
+    
+ 
     
 }

@@ -29,7 +29,7 @@ TODO: This library is helping me to find what is my current size for particular 
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.module_name = "sizeit"
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '11.0'
   s.swift_version = '4.0'
     
   s.framework = "UIKit"
@@ -44,7 +44,7 @@ TODO: This library is helping me to find what is my current size for particular 
   
   s.source_files = "Sizeit/**/*.{swift,strings}"
   
-  s.resources = "Sizeit/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+  s.resources = "Sizeit/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,ttf}"
   
   # s.resource_bundles = {
   #   'sizeit' => ['sizeit/Assets/*.png']
