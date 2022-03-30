@@ -30,7 +30,8 @@ public class SizeitUtils: NSObject {
             "hash_size": hashSize ? 1 : 0,
             "data": data] as [String : Any]
         print(param)
-        AppEvents.logEvent(AppEvents.Name.init(INIT_USER), parameters: param)
+//        AppEvents.logEvent(AppEvents.Name.init(INIT_USER), parameters: param)
+//        AppEvents.logEvent(AppEvents.Name.init(INIT_USER), parameters: param)
     }
     
     /**
@@ -50,7 +51,7 @@ public class SizeitUtils: NSObject {
             "product_sku": product_sku,
             "data": data] as [String : Any]
         print(param)
-        AppEvents.logEvent(AppEvents.Name.init(PRODUCT_VISIT), parameters: param)
+//        AppEvents.logEvent(AppEvents.Name.init(PRODUCT_VISIT), parameters: param)
       }
     
     /**
@@ -69,7 +70,7 @@ public class SizeitUtils: NSObject {
             "product_sku": product_sku,
             "data": data] as [String : Any]
         print(param)
-        AppEvents.logEvent(AppEvents.Name.init(PRODUCT_ADD_TO_CART), parameters: param)
+//        AppEvents.logEvent(AppEvents.Name.init(PRODUCT_ADD_TO_CART), parameters: param)
        }
 
     /**
@@ -88,7 +89,7 @@ public class SizeitUtils: NSObject {
             "product_sku": product_sku,
             "data": data] as [String : Any]
         print(param)
-        AppEvents.logEvent(AppEvents.Name.init(BUY_PRODUCT), parameters: param)
+//        AppEvents.logEvent(AppEvents.Name.init(BUY_PRODUCT), parameters: param)
     }
 
     /**
@@ -107,7 +108,7 @@ public class SizeitUtils: NSObject {
             "product_sku": product_sku,
             "data": data] as [String : Any]
         print(param)
-        AppEvents.logEvent(AppEvents.Name.init(RETURN_PRODUCT), parameters: param)
+//        AppEvents.logEvent(AppEvents.Name.init(RETURN_PRODUCT), parameters: param)
        }
     
     /**
@@ -119,6 +120,6 @@ public class SizeitUtils: NSObject {
         var params =  param
         params["user_id"] = userID
         print(params)
-        AppEvents.logEvent(AppEvents.Name.init(CUSTOM), parameters: param)
+//        AppEvents.logEvent(AppEvents.Name.init(CUSTOM), parameters: param)
     }
 }
