@@ -6,10 +6,10 @@
 //
 
 import Foundation
-import FBSDKCoreKit
+//import FBSDKCoreKit
 
 public class SizeitUtils: NSObject {
-    private var INIT_USER: String = "INIT_USER"
+    /*private var INIT_USER: String = "INIT_USER"
     private var PRODUCT_VISIT: String = "PRODUCT_VISIT"
     private var PRODUCT_ADD_TO_CART: String = "PRODUCT_ADD_TO_CART"
     private var BUY_PRODUCT: String = "BUY_PRODUCT"
@@ -121,5 +121,5 @@ public class SizeitUtils: NSObject {
         params["user_id"] = userID
         print(params)
 //        AppEvents.logEvent(AppEvents.Name.init(CUSTOM), parameters: param)
-    }
+    }*/
 }
