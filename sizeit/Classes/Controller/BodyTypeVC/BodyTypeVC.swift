@@ -16,6 +16,8 @@ class BodyTypeVC: UIViewController {
             collectionView.reloadData()
         }
     }
+    var param = [String:AnyObject]()
+    
     //MARK:- OutletZone
     
     @IBOutlet weak var collectionView:UICollectionView!
@@ -78,10 +80,12 @@ extension BodyTypeVC {
         let arr = arrBodyTypeModel.filter({$0.isSelected})
         if arr.count == 0{
             showAlert(message: "Please select any body type".localize(), vc: self)
-           return
+            return
         }
         let obj = mainStoryboard.instantiateViewController(withIdentifier: "HipsVC") as! HipsVC
         obj.imgBGMain = imgBGMain
+        param["bodyType"] = arr[0].name as AnyObject
+        obj.param = param
         self.navigationController?.pushViewController(obj, animated: true)
     }
     

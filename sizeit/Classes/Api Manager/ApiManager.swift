@@ -19,7 +19,7 @@ class ApiManager: NSObject {
     func MakePostAPI(name:String, params:[String:Any], progress: Bool = true, vc: UIViewController, isAuth:Bool = true, completionHandler: @escaping (NSDictionary?, String?)-> Void) {
         
         guard ReachabilityTest.isConnectedToNetwork() else {
-            showAlert(message: "No internet connection available", vc: vc)
+            showAlert(message: "No internet connection available".localize(), vc: vc)
             return
         }
         
@@ -41,7 +41,7 @@ class ApiManager: NSObject {
     func MakePostAPIWithoutVC(name:String, params:[String:Any], progress: Bool = true, completionHandler: @escaping (NSDictionary?, String?)-> Void) {
         
         guard ReachabilityTest.isConnectedToNetwork() else {
-            showAlert(message: "No internet connection available", vc: UIApplication.shared.keyWindow?.rootViewController ?? UIViewController())
+            showAlert(message: "No internet connection available".localize(), vc: UIApplication.shared.keyWindow?.rootViewController ?? UIViewController())
             return
         }
         

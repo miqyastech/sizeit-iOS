@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        obj.setupLanguage(isEnglish: false)
+        obj.setupLanguage(isEnglish: true)
         obj.handlerViewCart = {[weak self] in
             print("Click on view cart")
         }
@@ -104,9 +104,9 @@ class ViewController: UIViewController {
         // MARK:- Pass attribute name and userID
         let strCurrentSize = obj.getSizeByAttribute(attributeName: "Outer Wear-FREE")
         if strCurrentSize.isEmpty {
-//            obj.openSizePopup(userId: "1", attributeName: "Outer Wear-FREE",controller: self, key: "8MYHPT4-6364FZJ-Q2SW96P-GEBF9QP")
-            obj.bgImage = UIImage(named: "img_sample") ?? UIImage()
-            obj.openNewSizePopup(userId: "1", attributeName: "Outer Wear-FREE",controller: self, key: "8MYHPT4-6364FZJ-Q2SW96P-GEBF9QP")
+            obj.openSizePopup(userId: "1", attributeName: "Outer Wear-FREE",controller: self, key: "8MYHPT4-6364FZJ-Q2SW96P-GEBF9QP")
+//            obj.bgImage = UIImage(named: "img_sample") ?? UIImage()
+//            obj.openNewSizePopup(userId: "1", attributeName: "Outer Wear-FREE",controller: self, key: "8MYHPT4-6364FZJ-Q2SW96P-GEBF9QP")
             obj.handlerUpdate = {[weak self] size in
                 self?.btnMySize.setTitle("Your size is \(size)", for: .normal)
             }

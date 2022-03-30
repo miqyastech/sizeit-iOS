@@ -16,6 +16,9 @@ class HipsVC: UIViewController {
             collectionView.reloadData()
         }
     }
+    
+    var param = [String:AnyObject]()
+    
     //MARK:- OutletZone
     
     @IBOutlet weak var collectionView:UICollectionView!
@@ -79,7 +82,8 @@ extension HipsVC {
             return
         }
         let obj = mainStoryboard.instantiateViewController(withIdentifier: "FinalOutlputVC") as! FinalOutlputVC
-        obj.imgBGMain = imgBGMain
+        obj.imgBGMain = imgBGMain        
+        param["hips"] = arr[0].name as AnyObject
         self.navigationController?.pushViewController(obj, animated: true)
     }
     

@@ -12,6 +12,7 @@ class FinalOutlputVC: UIViewController {
     //MARK:- Varible Declaration
     
     var imgBGMain = UIImage()
+    var param = [String:AnyObject]()
     
     //MARK:- Outlet Zone
     

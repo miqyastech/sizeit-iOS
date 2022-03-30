@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'sizeit'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'This library is helping me to find what is my current size for particular products like, Skirt, T-shirts, Tops, and others.'
 
 # This description is used to generate tags and improve search results.
@@ -33,7 +33,7 @@ TODO: This library is helping me to find what is my current size for particular 
   s.swift_version = '4.0'
     
   s.framework = "UIKit"
-  s.dependency 'SwiftyJSON', '~> 4.3.0'
+  s.dependency 'SwiftyJSON'
   s.dependency 'Alamofire', '~> 4.9.1'
   s.dependency 'ReachabilitySwift', '~> 5.0.0'
   s.dependency 'AlamofireSwiftyJSON', '~> 1.0.2'

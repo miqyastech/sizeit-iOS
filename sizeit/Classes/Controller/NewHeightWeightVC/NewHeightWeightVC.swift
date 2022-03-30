@@ -11,10 +11,11 @@ class NewHeightWeightVC: UIViewController {
     
     //MARK:- Variable Declration
     
-    var topMargin:CGFloat = -7
-    var bottompMargin:CGFloat = -17
+    var topMargin:CGFloat = -5
+    var bottompMargin:CGFloat = -13
     var imgBGMain = UIImage()
     var handlerViewCart:() -> Void = {}
+    var param = [String:AnyObject]()
 
     //MARK:- Outlte zone
     
@@ -129,8 +130,14 @@ extension NewHeightWeightVC {
         } else if self.txtWeight.text?.isEmpty ?? true {
             showAlert(message: "Please enter width".localize(), vc: self)
         } else {
+            param = [String:AnyObject]()
+            param = ["height":txtHeight.text as AnyObject,
+                     "width":txtWeight.text as AnyObject,
+                     "apiKey":apiKey as AnyObject,
+                     "userId":kUserId as AnyObject]
             let obj = mainStoryboard.instantiateViewController(withIdentifier: "BodyTypeVC") as! BodyTypeVC
             obj.imgBGMain = imgBGMain
+            obj.param = param
             self.navigationController?.pushViewController(obj, animated: true)
         }
         
